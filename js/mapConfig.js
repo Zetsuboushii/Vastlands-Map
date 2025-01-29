@@ -15,9 +15,21 @@ export const kradian = {
 }
 export let currentMap = faergria
 
+let baseMaps = {
+    "Faergria": faergria.image,
+    "Kradian": kradian.image
+}
+
+export let overlays = {
+    "Alle": L.layerGroup([]),
+    "Städte": L.layerGroup([]),
+    "Dörfer": L.layerGroup([]),
+    "Sonstiges": L.layerGroup([])
+}
+
 export const map = L.map("map", {
     crs: L.CRS.Simple,
-    layers: [currentMap.image],
+    layers: [currentMap.image, overlays.Städte, overlays.Dörfer],
     maxBounds: faergria.bounds,
     maxBoundsViscosity: 1.0,
     minZoom: faergria.minZoom,
@@ -25,12 +37,7 @@ export const map = L.map("map", {
     attributionControl: false
 })
 
-const baseMaps = {
-    "Faergria": faergria.image,
-    "Kradian": kradian.image
-}
-
-let layerControl = L.control.layers(baseMaps).addTo(map)
+export let layerControl = L.control.layers(baseMaps, overlays).addTo(map)
 
 map.on("baselayerchange", function (e) {
     switch (e.layer) {
