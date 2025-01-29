@@ -1,6 +1,6 @@
-import {currentMap, faergria, kradian, map} from './mapConfig.js'
+import {map} from './mapConfig.js'
 import {addMarker, localMarkers} from './markerManager.js'
-import {pathPoints, showSetPathModal} from "./utils.js";
+import {pathPoints, showSetPathModal, tomeUrl} from "./utils.js";
 
 export let modes = {
     "setMarker": false,
@@ -47,19 +47,21 @@ map.on("click", function (e) {
         if (!name) {
             return
         }
-        fetch("https://tome.zetsuboushii.site/api/places.json")
+        fetch(`${tomeUrl}/api/places.json`)
             .then(response => response.json())
             .then(data => {
-                const place = data.find(item => item.name.toLowerCase() === name.toLowerCase())
-                if (place) {
-                    addMarker(currentMap.name, latlng, place)
+
+                if (data.find(item => item.name.toLowerCase() === name.toLowerCase())) {
+                    addMarker(latlng, data.find(item => item.name.toLowerCase() === name.toLowerCase()))
                 } else {
-                    alert("Couldn't locate place in API :(")
+                    addMarker(latlng, {"name": name, "placetype": prompt("Enter place type:")})
                 }
             })
             .catch(error => console.error("Error while fetching API:", error))
     } else if (modes.setPath) {
         pathPoints.push([e.latlng["lat"], e.latlng["lng"]])
         console.log(pathPoints)
+    } else if (modes.deleteMarker) {
+
     }
 })

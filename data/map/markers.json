@@ -1,48 +1,569 @@
 {
   "Faergria": [
     {
-      "name": "Dünsberg",
-      "x": 1311,
-      "y": 2333,
-      "placetype": "Dorf"
-    },
-    {
       "name": "Grenbrock",
-      "x": 1236,
-      "y": 2292,
-      "placetype": "Hauptstadt"
+      "x": 935.25,
+      "y": 2599.25,
+      "placeType": "Hauptstadt"
     },
     {
-      "name": "Orrin",
-      "x": 1322.25,
-      "y": 2280.75,
-      "placetype": "Dorf"
+      "name": "Dünsberg",
+      "x": 1204,
+      "y": 2545.5,
+      "placeType": "Dorf"
     },
     {
-      "name": "Adrestia",
-      "x": 1216,
-      "y": 2263.5,
-      "placetype": "Territorialstaat"
+      "name": "Tarporbach",
+      "x": 1153,
+      "y": 2301.5,
+      "placeType": "Stadt"
     },
     {
-      "name": "Alt-Dünsberg",
-      "x": 1226,
-      "y": 2339.5,
-      "placetype": "Ruinen"
+      "name": "Korshaven",
+      "x": 796.5,
+      "y": 2077,
+      "placeType": "Stadt"
     },
     {
       "name": "Tellius",
-      "x": 1342.5,
-      "y": 2423,
-      "placetype": "Stadt"
-    }
-  ],
-  "Kradian": [
+      "x": 1250,
+      "y": 2827,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Garadzar",
+      "x": 1361.251793583466,
+      "y": 2862.5009565778487,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Schachendorf",
+      "x": 1047.82263217491,
+      "y": 2949.1832969822253,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Krofenheim",
+      "x": 1423.5,
+      "y": 3206.25,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Nordholm",
+      "x": 1176,
+      "y": 3363.75,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Niddarvellir",
+      "x": 2651.75,
+      "y": 3144.5,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Renais",
+      "x": 2588,
+      "y": 2736,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Orrin",
+      "x": 2143.5,
+      "y": 2856.5,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Aegir",
+      "x": 2203.375,
+      "y": 2578.75,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Tinorke",
+      "x": 2778.75,
+      "y": 2421.5,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Nifl",
+      "x": 2442,
+      "y": 1980.5,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Daein",
+      "x": 2474,
+      "y": 1621,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Teryvnat",
+      "x": 1575,
+      "y": 1728.75,
+      "placeType": "Dorf"
+    },
     {
       "name": "Yerenas",
-      "x": 639,
-      "y": 1099,
-      "placetype": "Hauptstadt"
+      "x": 1245.5,
+      "y": 1526.5,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Frelia",
+      "x": 1071.5,
+      "y": 1938.75,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Elpis",
+      "x": 1406,
+      "y": 2026.5,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Lycia",
+      "x": 1640,
+      "y": 2130,
+      "placeType": "Stadt"
+    },
+    {
+      "name": "Brodia",
+      "x": 2060.155606987006,
+      "y": 1837.0634175226503,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Hindriks Sägemühle",
+      "x": 1916.2593770155436,
+      "y": 1822.9212818989195,
+      "placeType": "Sägemühle"
+    },
+    {
+      "name": "Tannivhs Haus",
+      "x": 1811.6075733999346,
+      "y": 1655.690528148301,
+      "placeType": "Hütte"
+    },
+    {
+      "name": "Tempel der Zeit",
+      "x": 1787.9194962301854,
+      "y": 1263.5998179803603,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Elfischer Außenposten",
+      "x": 1557.7562389539642,
+      "y": 1111.2183066346593,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Östliche Turmruine",
+      "x": 1559.5240059069304,
+      "y": 947.5230867899736,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Linus Taverne",
+      "x": 2117.0777028725233,
+      "y": 1897.8746007046934,
+      "placeType": "Taverne"
+    },
+    {
+      "name": "Glühender Bergpass",
+      "x": 2401.3346289095152,
+      "y": 2076.77261634489,
+      "placeType": "Bergpass"
+    },
+    {
+      "name": "Feuersanktuarium",
+      "x": 2408.4056967213805,
+      "y": 2124.1487706843886,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Sümpfe des Vergessens",
+      "x": 2711,
+      "y": 2206,
+      "placeType": "Sumpf"
+    },
+    {
+      "name": "Ruinen des Baumwächters",
+      "x": 2739.5,
+      "y": 2218,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Tor im Sumpf",
+      "x": 2752.059592378043,
+      "y": 2216.7797590198265,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Zugwachsene Grotte",
+      "x": 2376.585891567986,
+      "y": 2020.9111806311528,
+      "placeType": "Grotte"
+    },
+    {
+      "name": "Tor am Glühenden Bergpass",
+      "x": 2388.960260238751,
+      "y": 2031.1642289583576,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Tor bei der verbannten Stadt",
+      "x": 2664.0247981203174,
+      "y": 3109.5020702678426,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Schattenschwarzmarkt",
+      "x": 2641.043827731755,
+      "y": 3158.2924381697144,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Drakensumpf",
+      "x": 2544.523752099791,
+      "y": 3163.5957390286135,
+      "placeType": "Sumpf"
+    },
+    {
+      "name": "Krofenheim-Brücke",
+      "x": 1363.6554275182568,
+      "y": 3253.3983002393047,
+      "placeType": "Brücke"
+    },
+    {
+      "name": "Westlicher Wachposten von Nordholm",
+      "x": 1141.9774516162743,
+      "y": 3347.797055527709,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Östlicher Wachposten von Nordholm",
+      "x": 1212.3345763443356,
+      "y": 3358.050103854914,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Tor am westlichen Nordholm-Außenposten",
+      "x": 1127.8353159925432,
+      "y": 3357.696550464321,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Gerards Hütte",
+      "x": 1086.8231226837236,
+      "y": 3385.273714930596,
+      "placeType": "Hütte"
+    },
+    {
+      "name": "Kronenpass",
+      "x": 1056.0639777021086,
+      "y": 3442.195810816113,
+      "placeType": "Bergpass"
+    },
+    {
+      "name": "Tor am Fuße der Kronenschneeberge",
+      "x": 1053.942657358549,
+      "y": 3374.6671132127976,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Schneespitze",
+      "x": 1095.308404057962,
+      "y": 3512.906488934768,
+      "placeType": "Schrein"
+    },
+    {
+      "name": "Stephans Hütte",
+      "x": 1115.4609473217786,
+      "y": 3256.226727364051,
+      "placeType": "Hütte"
+    },
+    {
+      "name": "Tor der Schneelande",
+      "x": 1219.0520907656078,
+      "y": 3195.0619907914147,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Kloster der Himmlischen Recken",
+      "x": 1023.1835123769342,
+      "y": 3047.983780304613,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Windige Kirchenruine",
+      "x": 1087.1766760743167,
+      "y": 2957.1205589221418,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Diebeslager Escrigria",
+      "x": 1097.7832777921149,
+      "y": 2950.049491110276,
+      "placeType": "Lager"
+    },
+    {
+      "name": "Schicksalspass",
+      "x": 1097.7832777921149,
+      "y": 2862.014696852551,
+      "placeType": "Bergpass"
+    },
+    {
+      "name": "Tempel am Schicksalspass",
+      "x": 1124.6533354772037,
+      "y": 2901.259123208404,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Anwesen von Lysander",
+      "x": 1198.1924407206047,
+      "y": 2819.941843371951,
+      "placeType": "Anwesen"
+    },
+    {
+      "name": "Tor in den Höhlen der Telliusklamm",
+      "x": 1246.6292552318832,
+      "y": 2782.8187373596575,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Wassertempel",
+      "x": 1245.5685950601035,
+      "y": 2841.155046807548,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Tunnel zum Meeresreich",
+      "x": 1238.8510806388313,
+      "y": 2871.560638398569,
+      "placeType": "Tunnel"
+    },
+    {
+      "name": "Versunkene Burg",
+      "x": 1283.0452544629904,
+      "y": 2864.489570586704,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Meerestempel",
+      "x": 1303.197797726807,
+      "y": 2885.349220631707,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Tor unter der Meer",
+      "x": 1292.2376426184155,
+      "y": 2881.8136867257745,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Große Zwergenbrücke",
+      "x": 1290.469875665449,
+      "y": 2688.4199820712533,
+      "placeType": "Brücke"
+    },
+    {
+      "name": "Alte Zollburg",
+      "x": 1310.6224189292657,
+      "y": 2595.4354403452226,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Blitzaltar",
+      "x": 1394.4145724998716,
+      "y": 2711.4009524598164,
+      "placeType": "Schrein"
+    },
+    {
+      "name": "Bernsteintempel",
+      "x": 1402.546300483517,
+      "y": 2688.7735354618467,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Tor am Biltzaltar",
+      "x": 1384.5150775632599,
+      "y": 2706.804758382104,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Große Mine von Garadzar",
+      "x": 1371.0800487207155,
+      "y": 2846.1047942758537,
+      "placeType": "Mine"
+    },
+    {
+      "name": "Dunkler Tunnel",
+      "x": 1361.5,
+      "y": 2807,
+      "placeType": "Tunnel"
+    },
+    {
+      "name": "Letztes Bollwerk der Zwerge",
+      "x": 1371.0800487207155,
+      "y": 2820.2953967625444,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Erstes Bollwerk der Zwerge",
+      "x": 1347.0384181603729,
+      "y": 2750.998932206263,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Klippenplateau der Tausend Spitzen",
+      "x": 1485.277793882343,
+      "y": 2713.1687194127826,
+      "placeType": "Bergpass"
+    },
+    {
+      "name": "Pass des Goldenen Aufstiegs",
+      "x": 1362.2412139558837,
+      "y": 2769.383708517113,
+      "placeType": "Bergpass"
+    },
+    {
+      "name": "Tunnel des Aufstiegs",
+      "x": 1329.7143020213025,
+      "y": 2701.1479041326115,
+      "placeType": "Tunnel"
+    },
+    {
+      "name": "Donnernder Steilpass",
+      "x": 1436.8409793710646,
+      "y": 2717.764913490495,
+      "placeType": "Bergpass"
+    },
+    {
+      "name": "Graekurith",
+      "x": 1245.9221484506966,
+      "y": 2546.998625833944,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Alt-Dünsberg",
+      "x": 1232.5,
+      "y": 2558,
+      "placeType": "Ruinen"
+    },
+    {
+      "name": "Igmusurs Hütte",
+      "x": 1181.5754313627208,
+      "y": 2556.5445673799622,
+      "placeType": "Hütte"
+    },
+    {
+      "name": "Knorrwurzelschrein",
+      "x": 1181.5754313627208,
+      "y": 2570.6867030036933,
+      "placeType": "Schrein"
+    },
+    {
+      "name": "Jagdschloss Dünsberg",
+      "x": 1128.1888693831365,
+      "y": 2579.8790911591186,
+      "placeType": "Schloss"
+    },
+    {
+      "name": "Alter Kerker der Stadtwache",
+      "x": 1049.3464632808364,
+      "y": 2525.4318690077544,
+      "placeType": "Festung"
+    },
+    {
+      "name": "Goblinlager an der Hauptstraße",
+      "x": 1053.5891039679557,
+      "y": 2568.2118292695404,
+      "placeType": "Lager"
+    },
+    {
+      "name": "Tempel der Liebe",
+      "x": 1168.1404025201764,
+      "y": 2356.4333483041696,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Grotte des Lebens",
+      "x": 1043.3360556407508,
+      "y": 2229.8612344717776,
+      "placeType": "Grotte"
+    },
+    {
+      "name": "Taverne an der Ost-Brücke",
+      "x": 1434.7196590275048,
+      "y": 2217.840419191606,
+      "placeType": "Taverne"
+    },
+    {
+      "name": "Tor an der Brücke von Elpis",
+      "x": 1446.0333675264897,
+      "y": 2231.982554815337,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Elpis-Brücke",
+      "x": 1465.832357399713,
+      "y": 2183.5457403040587,
+      "placeType": "Brücke"
+    },
+    {
+      "name": "Grabmal der Alten Fürsten",
+      "x": 1427.2950378250462,
+      "y": 1977.0705601975867,
+      "placeType": "Grabmal"
+    },
+    {
+      "name": "Tor der Obsidian-Grenzlande",
+      "x": 1452.3973285571685,
+      "y": 1928.6337456863082,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Kloster Schicksalsweg",
+      "x": 1493.4095218659884,
+      "y": 1912.723843109611,
+      "placeType": "Wegpunkt"
+    },
+    {
+      "name": "Banditen-Straßensperre",
+      "x": 1440.3765132769972,
+      "y": 1829.2852429295983,
+      "placeType": "Lager"
+    },
+    {
+      "name": "Taverne an der Südstraße",
+      "x": 1103.7936854322006,
+      "y": 1856.1553006146871,
+      "placeType": "Taverne"
+    },
+    {
+      "name": "Blütenschloss Frelia",
+      "x": 1045.8109293749037,
+      "y": 1972.120812729281,
+      "placeType": "Schloss"
+    },
+    {
+      "name": "Nois Hexenhütte",
+      "x": 1320.168360475284,
+      "y": 1423.4059505285202,
+      "placeType": "Hütte"
+    },
+    {
+      "name": "Quell der Wünsche",
+      "x": 1345.6242045979998,
+      "y": 1350.2203986757124,
+      "placeType": "Tempel"
+    },
+    {
+      "name": "Giftdornsee",
+      "x": 1278.0955069946845,
+      "y": 1356.5843597063913,
+      "placeType": "See"
     }
-  ]
+  ],
+  "Kradian": []
 }

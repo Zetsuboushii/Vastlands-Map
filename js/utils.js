@@ -8,10 +8,56 @@ export const tomeUrl = "https://tome.zetsuboushii.site"
 export const CrestIcon = L.Icon.extend({
     options: {
         iconSize: [48, 57.5],
-        iconAnchor: [24, 50.5],
-        popupAnchor: [1, -42]
+        iconAnchor: [24, 29],
+        popupAnchor: [0, -29]
     }
 })
+
+export const GenericIcon = L.Icon.extend({
+    options: {
+        iconSize: [50, 50],
+        iconAnchor: [25, 25],
+        popupAnchor: [0, -25]
+    }
+})
+
+const placeTypeIcons = {
+    "Hauptstadt": `${imageHostUrl}/dnd/crests/{name}-crest.png`,
+    "Stadt": `${imageHostUrl}/dnd/crests/{name}-crest.png`,
+    "Dorf": `${imageHostUrl}/dnd/crests/{name}-crest.png`,
+    "Lager": "assets/markers/marker_camp.png",
+    "Schloss": "assets/markers/marker_castle.png",
+    "Jagdschloss": "assets/markers/marker_castle.png",
+    "Höhle": "assets/markers/marker_cave.png",
+    "Tunnel": "assets/markers/marker_cave.png",
+    "Dock": "assets/markers/marker_dock.png",
+    "Hafen": "assets/markers/marker_dock.png",
+    "Feld": "assets/markers/marker_farm.png",
+    "Farm": "assets/markers/marker_farm.png",
+    "Lichtung": "assets/markers/marker_grove.png",
+    "Mine": "assets/markers/marker_mine.png",
+    "Tor": "assets/markers/marker_occult.png",
+    "Bergpass": "assets/markers/marker_pass.png",
+    "Sumpf": "assets/markers/marker_pond.png",
+    "Moor": "assets/markers/marker_pond.png",
+    "Ruinen": "assets/markers/marker_ruins.png",
+    "Ruine": "assets/markers/marker_ruins.png",
+    "Hütte": "assets/markers/marker_shack.png",
+    "Siedlung": "assets/markers/marker_shack.png",
+    "Schiff": "assets/markers/marker_ship.png",
+    "Gewässer": "assets/markers/marker_ship.png",
+    "Schrein": "assets/markers/marker_shrine.png",
+    "Festung": "assets/markers/marker_stronghold.png",
+    "Taverne": "assets/markers/marker_tavern.png",
+    "Tempel": "assets/markers/marker_temple.png",
+    "Kirche": "assets/markers/marker_temple.png",
+    "Grabmal": "assets/markers/marker_tomb.png",
+    "Grab": "assets/markers/marker_tomb.png",
+    "Gruft": "assets/markers/marker_tomb.png",
+    "Turm": "assets/markers/marker_tower.png",
+    "Windmühle": "assets/markers/marker_windmill.png",
+    "Sägemühle": "assets/markers/marker_woodmill.png"
+}
 
 export let pathPoints = []
 

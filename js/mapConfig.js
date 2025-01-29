@@ -21,6 +21,7 @@ export const map = L.map("map", {
     maxBounds: faergria.bounds,
     maxBoundsViscosity: 1.0,
     minZoom: faergria.minZoom,
+    maxZoom: 1.5,
     attributionControl: false
 })
 

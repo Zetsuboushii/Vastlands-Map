@@ -1,5 +1,6 @@
 import {map, faergria, kradian, currentMap} from './mapConfig.js'
-import {CrestIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
+import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
+import {modes} from "./app.js";
 
 export let localMarkers = {"Faergria": [], "Kradian": []}
 let activeMarkers = []
@@ -29,11 +30,100 @@ export function reloadMapElements() {
                 this.closePopup()
             })
             .on('click', function (e) {
-                window.open(`${tomeUrl}/places/${markerData.name.toLowerCase()}`, '_blank')
+                if (modes.deleteMarker) {
+                    localMarkers[currentMap.name].splice(localMarkers[currentMap.name].indexOf(markerData), 1)
+                    reloadMapElements()
+                    showLocalsJsonModal(localMarkers)
+                } else {
+                    window.open(`${tomeUrl}/places/${markerData.name.toLowerCase()}`, '_blank')
+                }
             })
 
-        if (["Hauptstadt", "Stadt", "Dorf"].includes(markerData.placeType)) {
-            marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
+        switch (markerData.placeType) {
+            case "Hauptstadt":
+            case "Stadt":
+            case "Dorf":
+                marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
+                break
+            case "Lager":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_camp.png"}))
+                break
+            case "Schloss":
+            case "Jagdschloss":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_castle.png"}))
+                break
+            case "Höhle":
+            case "Tunnel":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_cave.png"}))
+                break
+            case "Dock":
+            case "Hafen":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_dock.png"}))
+                break
+            case "Feld":
+            case "Farm":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_farm.png"}))
+                break
+            case "Lichtung":
+            case "Grotte":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_grove.png"}))
+                break
+            case "Mine":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_mine.png"}))
+                break
+            case "Tor":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_occult.png"}))
+                break
+            case "Bergpass":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pass.png"}))
+                break
+            case "Sumpf":
+            case "Moor":
+            case "See":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
+                break
+            case "Ruine":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ruins.png"}))
+                break
+            case "Hütte":
+            case "Siedlung":
+            case "Anwesen":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
+                break
+            case "Schiff":
+            case "Gewässer":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ship.png"}))
+                break
+            case "Schrein":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shrine.png"}))
+                break
+            case "Festung":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_stronghold.png"}))
+                break
+            case "Taverne":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
+                break
+            case "Tempel":
+            case "Kirche":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
+                break
+            case "Grabmal":
+            case "Grab":
+            case "Gruft":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
+                break
+            case "Turm":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tower.png"}))
+                break
+            case "Windmühle":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_windmill.png"}))
+                break
+            case "Sägemühle":
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_woodmill.png"}))
+                break
+            default:
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_poi.png"}))
+                break
         }
 
         activeMarkers.push(marker)
@@ -87,6 +177,7 @@ export function addMarker(latlng, place) {
     activeMarkers.push(marker)
     localMarkers[currentMap.name].push({name: place.name, x: latlng.lng, y: latlng.lat, placeType: place.placetype})
     showLocalsJsonModal(localMarkers)
+    reloadMapElements()
 }
 
 export function addPath(pathPoints, start, goal) {
@@ -101,4 +192,5 @@ export function addPath(pathPoints, start, goal) {
     activePaths.push(path)
     localPaths[currentMap.name].push({start: start.name, goal: goal.name, pathPoints: arr})
     showLocalsJsonModal(localPaths)
+    reloadMapElements()
 }
