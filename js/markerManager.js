@@ -1,5 +1,5 @@
 import {map, faergria, kradian, currentMap} from './mapConfig.js'
-import {CrestIcon, imageHostUrl, showLocalsJsonModal, tomeUrl} from './utils.js'
+import {CrestIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
 
 export let localMarkers = {"Faergria": [], "Kradian": []}
 let activeMarkers = []
@@ -67,6 +67,7 @@ export function loadMapElementsFromFiles() {
                     reloadMapElements()
                 })
                 .catch(error => console.error("Error while fetching place types:", error))
+            zoomToMarkerByName(markerData)
         })
         .catch(error => console.error("Error while loading markers:", error))
 

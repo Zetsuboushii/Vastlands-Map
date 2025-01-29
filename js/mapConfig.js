@@ -1,5 +1,5 @@
-import {reloadMapElements, loadMapElementsFromFiles} from './markerManager.js'
-import {imageHostUrl} from "./utils.js";
+import {reloadMapElements, loadMapElementsFromFiles, localMarkers} from './markerManager.js'
+import {imageHostUrl, zoomToMarkerByName} from "./utils.js";
 
 export const faergria = {
     name: "Faergria",

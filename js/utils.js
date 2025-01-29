@@ -1,5 +1,5 @@
 import {modes} from "./app.js";
-import {addMarker, addPath} from "./markerManager.js";
+import {addMarker, addPath, localMarkers} from "./markerManager.js";
 import {currentMap, faergria, kradian, map} from "./mapConfig.js";
 
 export const imageHostUrl = "https://images.zetsuboushii.site"
@@ -129,4 +129,16 @@ export function showSetPathModal(localMarkers) {
     modal.appendChild(confirmButton)
     modal.appendChild(closeButton)
     document.body.appendChild(modal)
+}
+
+export function zoomToMarkerByName(markerData) {
+    let markerName = new URLSearchParams(window.location.search)
+    console.log(markerData)
+    console.log(markerName.get("marker"))
+
+    markerData[currentMap.name].forEach(marker => {
+        if (marker.name === markerName.get("marker")) {
+            map.setView([marker.y, marker.x], 1.5)
+        }
+    })
 }
