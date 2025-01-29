@@ -2,6 +2,9 @@ import {modes} from "./app.js";
 import {addMarker, addPath} from "./markerManager.js";
 import {currentMap, faergria, kradian, map} from "./mapConfig.js";
 
+export const imageHostUrl = "https://images.zetsuboushii.site"
+export const tomeUrl = "https://tome.zetsuboushii.site"
+
 export const CrestIcon = L.Icon.extend({
     options: {
         iconSize: [48, 57.5],

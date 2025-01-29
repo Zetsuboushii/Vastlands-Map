@@ -1,15 +1,16 @@
 import {reloadMapElements, loadMapElementsFromFiles} from './markerManager.js'
+import {imageHostUrl} from "./utils.js";
 
 export const faergria = {
     name: "Faergria",
     bounds: [[0, 0], [4000, 4000]],
-    image: L.imageOverlay("https://zetsuboushii.github.io/image-host/dnd/charts/faergria.png", [[0, 0], [4000, 4000]]),
+    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/faergria.png`, [[0, 0], [4000, 4000]]),
     minZoom: -2
 }
 export const kradian = {
     name: "Kradian",
     bounds: [[0, 0], [2000, 1400]],
-    image: L.imageOverlay("https://zetsuboushii.github.io/image-host/dnd/charts/kradian.jpg", [[0, 0], [2000, 1400]]),
+    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.jpg`, [[0, 0], [2000, 1400]]),
     minZoom: -1
 }
 export let currentMap = faergria

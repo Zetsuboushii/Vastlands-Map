@@ -1,5 +1,5 @@
 import {map, faergria, kradian, currentMap} from './mapConfig.js'
-import {CrestIcon, showLocalsJsonModal} from './utils.js'
+import {CrestIcon, imageHostUrl, showLocalsJsonModal, tomeUrl} from './utils.js'
 
 export let localMarkers = {"Faergria": [], "Kradian": []}
 let activeMarkers = []
@@ -29,11 +29,11 @@ export function reloadMapElements() {
                 this.closePopup()
             })
             .on('click', function (e) {
-                window.open(`http://tome.zetsuboushii.site/places/${markerData.name.toLowerCase()}`, '_blank')
+                window.open(`${tomeUrl}/places/${markerData.name.toLowerCase()}`, '_blank')
             })
 
         if (["Hauptstadt", "Stadt", "Dorf"].includes(markerData.placeType)) {
-            marker.setIcon(new CrestIcon({iconUrl: `https://zetsuboushii.github.io/image-host/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
+            marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
         }
 
         activeMarkers.push(marker)
@@ -51,7 +51,7 @@ export function loadMapElementsFromFiles() {
     fetch("data/map/markers.json")
         .then(response => response.json())
         .then(markerData => {
-            fetch("https://tome.zetsuboushii.site/api/places.json")
+            fetch(`${tomeUrl}/api/places.json`)
                 .then(response => response.json())
                 .then(apiData => {
                     for (const layerName in markerData) {
