@@ -1,0 +1,48 @@
+{
+  "Faergria": [
+    {
+      "name": "Dünsberg",
+      "x": 1311,
+      "y": 2333,
+      "placetype": "Dorf"
+    },
+    {
+      "name": "Grenbrock",
+      "x": 1236,
+      "y": 2292,
+      "placetype": "Hauptstadt"
+    },
+    {
+      "name": "Orrin",
+      "x": 1322.25,
+      "y": 2280.75,
+      "placetype": "Dorf"
+    },
+    {
+      "name": "Adrestia",
+      "x": 1216,
+      "y": 2263.5,
+      "placetype": "Territorialstaat"
+    },
+    {
+      "name": "Alt-Dünsberg",
+      "x": 1226,
+      "y": 2339.5,
+      "placetype": "Ruinen"
+    },
+    {
+      "name": "Tellius",
+      "x": 1342.5,
+      "y": 2423,
+      "placetype": "Stadt"
+    }
+  ],
+  "Kradian": [
+    {
+      "name": "Yerenas",
+      "x": 639,
+      "y": 1099,
+      "placetype": "Hauptstadt"
+    }
+  ]
+}
