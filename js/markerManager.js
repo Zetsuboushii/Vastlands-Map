@@ -132,6 +132,7 @@ export function reloadMapElements() {
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shrine.png"}))
                 break
+            case "Verlies":
             case "Festung":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_stronghold.png"}))
