@@ -565,5 +565,34 @@
       "placeType": "See"
     }
   ],
-  "Kradian": []
+  "Markath": [
+    {
+      "name": "Llurthargothr",
+      "x": 380,
+      "y": 1116,
+      "placeType": "Hauptstadt"
+    },
+    {
+      "name": "Undraridor",
+      "x": 1552,
+      "y": 717,
+      "placeType": "Stadt"
+    }
+  ],
+  "Kradian": [
+    {
+      "name": "Knechto",
+      "x": 883,
+      "y": 2244,
+      "placeType": "Tor"
+    }
+  ],
+  "Kouyoukuni": [
+    {
+      "name": "Knechto",
+      "x": 883,
+      "y": 2244,
+      "placeType": "Tor"
+    }
+  ]
 }

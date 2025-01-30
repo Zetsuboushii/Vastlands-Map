@@ -7,21 +7,34 @@ export const faergria = {
     image: L.imageOverlay(`${imageHostUrl}/dnd/charts/faergria.png`, [[0, 0], [4000, 4000]]),
     minZoom: -2
 }
+export const markath = {
+    name: "Markath",
+    bounds: [[0, 0], [1600, 1800]],
+    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/markath.png`, [[0, 0], [1600, 1800]]),
+    minZoom: -1
+}
 export const kradian = {
     name: "Kradian",
-    bounds: [[0, 0], [2000, 1400]],
-    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.jpg`, [[0, 0], [2000, 1400]]),
-    minZoom: -1
+    bounds: [[0, 0], [4000, 2800]],
+    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.png`, [[0, 0], [4000, 2800]]),
+    minZoom: -2
+}
+export const kouyoukuni = {
+    name: "Kouyoukuni",
+    bounds: [[0, 0], [4000, 4000]],
+    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kouyoukuni.png`, [[0, 0], [4000, 4000]]),
+    minZoom: -2
 }
 export let currentMap = faergria
 
 let baseMaps = {
     "Faergria": faergria.image,
-    "Kradian": kradian.image
+    "Markath": markath.image,
+    "Kradian": kradian.image,
+    "Kouyoukuni": kouyoukuni.image
 }
 
 export let overlays = {
-    "Alle": L.layerGroup([]),
     "Städte": L.layerGroup([]),
     "Dörfer": L.layerGroup([]),
     "Sonstiges": L.layerGroup([])
@@ -47,10 +60,19 @@ map.on("baselayerchange", function (e) {
         case kradian.image:
             currentMap = kradian
             break
+        case markath.image:
+            currentMap = markath
+            break
+        case kouyoukuni.image:
+            currentMap = kouyoukuni
+            break
     }
     map.setMaxBounds(currentMap.bounds)
     map.fitBounds(currentMap.bounds)
     map.setMinZoom(currentMap.minZoom)
+
+    Object.values(overlays).forEach(layer => layer.clearLayers())
+
     reloadMapElements()
 })
 

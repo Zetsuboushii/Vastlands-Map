@@ -42,171 +42,142 @@ export function reloadMapElements() {
             case "Hauptstadt":
             case "Stadt":
                 marker.addTo(overlays.Städte)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
                 break
             case "Dorf":
                 marker.addTo(overlays.Dörfer)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
                 break
             case "Lager":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_camp.png"}))
                 break
             case "Schloss":
             case "Jagdschloss":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_castle.png"}))
                 break
             case "Höhle":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_cave.png"}))
                 break
             case "Tunnel":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_cave.png"}))
                 break
             case "Dock":
             case "Hafen":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_dock.png"}))
                 break
             case "Feld":
             case "Farm":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_farm.png"}))
                 break
             case "Lichtung":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_grove.png"}))
                 break
             case "Grotte":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_grove.png"}))
                 break
             case "Mine":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_mine.png"}))
                 break
             case "Tor":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_occult.png"}))
                 break
             case "Bergpass":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pass.png"}))
                 break
             case "Sumpf":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
                 break
             case "Moor":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
                 break
             case "See":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
                 break
             case "Ruinen":
             case "Ruine":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ruins.png"}))
                 break
             case "Hütte":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
                 break
             case "Siedlung":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
                 break
             case "Anwesen":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
                 break
             case "Gewässer":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ship.png"}))
                 break
             case "Schrein":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shrine.png"}))
                 break
             case "Festung":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_stronghold.png"}))
                 break
             case "Taverne":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
+                break
+            case "Kloster":
+                marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
                 break
             case "Tempel":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
                 break
             case "Kirche":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
                 break
             case "Grabmal":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
                 break
             case "Grab":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
                 break
             case "Gruft":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
                 break
             case "Turm":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tower.png"}))
                 break
             case "Windmühle":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_windmill.png"}))
                 break
             case "Sägemühle":
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_woodmill.png"}))
                 break
             default:
                 marker.addTo(overlays.Sonstiges)
-                marker.addTo(overlays.Alle)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_poi.png"}))
                 break
         }
