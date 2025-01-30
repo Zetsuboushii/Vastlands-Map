@@ -34,7 +34,7 @@ export function reloadMapElements() {
                     reloadMapElements()
                     showLocalsJsonModal(localMarkers)
                 } else {
-                    window.open(`${tomeUrl}/places/${markerData.name.toLowerCase()}`, '_blank')
+                    window.open(`${tomeUrl}/places/${markerData.name.toLowerCase().replace(" ", "-")}`, '_blank')
                 }
             })
 
