@@ -187,7 +187,11 @@ export function reloadMapElements() {
     })
 
     localPaths[currentMap.name].forEach(pathData => {
-        const path = L.polyline(pathData.pathPoints)
+        const path = L.polyline(pathData.pathPoints, {
+            dashArray: "40 20",
+            color: "#000",
+            weight: 5
+        })
             .addTo(map)
 
         activePaths.push(path)
