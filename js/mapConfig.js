@@ -42,7 +42,7 @@ export let overlays = {
 
 export const map = L.map("map", {
     crs: L.CRS.Simple,
-    layers: [currentMap.image, overlays.Städte, overlays.Dörfer],
+    layers: [currentMap.image, overlays.Städte, overlays.Dörfer, overlays.Sonstiges],
     maxBounds: faergria.bounds,
     maxBoundsViscosity: 1.0,
     minZoom: faergria.minZoom,
