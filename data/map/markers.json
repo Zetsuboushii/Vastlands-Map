@@ -151,22 +151,10 @@
       "placeType": "Tempel"
     },
     {
-      "name": "Elfischer Außenposten",
-      "x": 1557.7562389539642,
-      "y": 1111.2183066346593,
-      "placeType": "Festung"
-    },
-    {
       "name": "Östliche Turmruine",
       "x": 1559.5240059069304,
       "y": 947.5230867899736,
       "placeType": "Ruine"
-    },
-    {
-      "name": "Linus Taverne",
-      "x": 2117.0777028725233,
-      "y": 1897.8746007046934,
-      "placeType": "Taverne"
     },
     {
       "name": "Glühender Bergpass",
@@ -472,7 +460,7 @@
       "name": "Alter Kerker der Stadtwache",
       "x": 1049.3464632808364,
       "y": 2525.4318690077544,
-      "placeType": "Festung"
+      "placeType": "Verlies"
     },
     {
       "name": "Goblinlager an der Hauptstraße",
@@ -526,7 +514,7 @@
       "name": "Kloster Schicksalsweg",
       "x": 1493.4095218659884,
       "y": 1912.723843109611,
-      "placeType": "Wegpunkt"
+      "placeType": "Kloster"
     },
     {
       "name": "Banditen-Straßensperre",
@@ -563,6 +551,24 @@
       "x": 1278.0955069946845,
       "y": 1356.5843597063913,
       "placeType": "See"
+    },
+    {
+      "name": "Inidal-Grenzposten",
+      "x": 1578,
+      "y": 1106,
+      "placeType": "Wegpunkt"
+    },
+    {
+      "name": "Hufeisen-Taverne",
+      "x": 2117,
+      "y": 1895.5,
+      "placeType": "Taverne"
+    },
+    {
+      "name": "Altar der Funken",
+      "x": 2418.956122346919,
+      "y": 2117.1253710716855,
+      "placeType": "Tempel"
     }
   ],
   "Markath": [
