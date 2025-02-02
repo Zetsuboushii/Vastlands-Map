@@ -136,7 +136,7 @@
       "name": "Hindriks Sägemühle",
       "x": 1916.2593770155436,
       "y": 1822.9212818989195,
-      "placeType": "Sägemühle"
+      "placeType": "Wegpunkt"
     },
     {
       "name": "Tannivhs Haus",
@@ -556,7 +556,7 @@
       "name": "Inidal-Grenzposten",
       "x": 1578,
       "y": 1106,
-      "placeType": "Wegpunkt"
+      "placeType": "Festung"
     },
     {
       "name": "Hufeisen-Taverne",
@@ -568,7 +568,13 @@
       "name": "Altar der Funken",
       "x": 2418.956122346919,
       "y": 2117.1253710716855,
-      "placeType": "Tempel"
+      "placeType": "Schrein"
+    },
+    {
+      "name": "Frelia-Brücke",
+      "x": 1067.0241328105,
+      "y": 2053.4380925657338,
+      "placeType": "Brücke"
     }
   ],
   "Markath": [
