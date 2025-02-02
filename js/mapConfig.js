@@ -27,7 +27,7 @@ export const kouyoukuni = {
 }
 export let currentMap = faergria
 
-let baseMaps = {
+export let baseMaps = {
     "Faergria": faergria.image,
     "Markath": markath.image,
     "Kradian": kradian.image,
@@ -35,14 +35,15 @@ let baseMaps = {
 }
 
 export let overlays = {
-    "Städte": L.layerGroup([]),
-    "Dörfer": L.layerGroup([]),
+    "Wege": L.layerGroup([]),
+    "Ortschaften": L.layerGroup([]),
+    "Tore": L.layerGroup([]),
     "Sonstiges": L.layerGroup([])
 }
 
 export const map = L.map("map", {
     crs: L.CRS.Simple,
-    layers: [currentMap.image, overlays.Städte, overlays.Dörfer, overlays.Sonstiges],
+    layers: [currentMap.image, overlays.Wege, overlays.Ortschaften, overlays.Tore, overlays.Sonstiges],
     maxBounds: faergria.bounds,
     maxBoundsViscosity: 1.0,
     minZoom: faergria.minZoom,

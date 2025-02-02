@@ -41,11 +41,8 @@ export function reloadMapElements() {
         switch (markerData.placeType) {
             case "Hauptstadt":
             case "Stadt":
-                marker.addTo(overlays.Städte)
-                marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
-                break
             case "Dorf":
-                marker.addTo(overlays.Dörfer)
+                marker.addTo(overlays.Ortschaften)
                 marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
                 break
             case "Lager":
@@ -88,7 +85,7 @@ export function reloadMapElements() {
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_mine.png"}))
                 break
             case "Tor":
-                marker.addTo(overlays.Sonstiges)
+                marker.addTo(overlays.Tore)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_occult.png"}))
                 break
             case "Bergpass":
@@ -189,10 +186,10 @@ export function reloadMapElements() {
     localPaths[currentMap.name].forEach(pathData => {
         const path = L.polyline(pathData.pathPoints, {
             dashArray: "40 20",
-            color: "#000",
+            color: "#800020",
             weight: 5
         })
-            .addTo(map)
+            .addTo(overlays.Wege)
 
         activePaths.push(path)
     })
