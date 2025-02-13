@@ -25,7 +25,27 @@ export const kouyoukuni = {
     image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kouyoukuni.png`, [[0, 0], [4000, 4000]]),
     minZoom: -2
 }
+
+let params = new URLSearchParams(window.location.search)
+
 export let currentMap = faergria
+
+switch (params.get("map")) {
+    case "Faergria":
+        currentMap = faergria
+        break
+    case "Kradian":
+        currentMap = kradian
+        break
+    case "kouyoukuni":
+        currentMap = kouyoukuni
+        break
+    case "Markath":
+        currentMap = markath
+        break
+    default:
+        currentMap = faergria
+}
 
 export let baseMaps = {
     "Faergria": faergria.image,
@@ -38,12 +58,14 @@ export let overlays = {
     "Wege": L.layerGroup([]),
     "Ortschaften": L.layerGroup([]),
     "Tore": L.layerGroup([]),
+    "Tempel": L.layerGroup([]),
+    "Schreine": L.layerGroup([]),
     "Sonstiges": L.layerGroup([])
 }
 
 export const map = L.map("map", {
     crs: L.CRS.Simple,
-    layers: [currentMap.image, overlays.Wege, overlays.Ortschaften, overlays.Tore, overlays.Sonstiges],
+    layers: [currentMap.image, overlays.Ortschaften, overlays.Tore, overlays.Tempel, overlays.Schreine, overlays.Sonstiges],
     maxBounds: faergria.bounds,
     maxBoundsViscosity: 1.0,
     minZoom: faergria.minZoom,
@@ -51,10 +73,10 @@ export const map = L.map("map", {
     attributionControl: false
 })
 
-export let layerControl = L.control.layers(baseMaps, overlays).addTo(map)
+export let layerControl = L.control.layers(baseMaps, overlays, {collapsed:false}).addTo(map)
 
-map.on("baselayerchange", function (e) {
-    switch (e.layer) {
+export function changeBaseLayer(layer) {
+    switch (layer) {
         case faergria.image:
             currentMap = faergria
             break
@@ -75,6 +97,10 @@ map.on("baselayerchange", function (e) {
     Object.values(overlays).forEach(layer => layer.clearLayers())
 
     reloadMapElements()
+}
+
+map.on("baselayerchange", function (e) {
+    changeBaseLayer(e.layer)
 })
 
 map.fitBounds(currentMap.bounds)

@@ -1,6 +1,6 @@
 import {modes} from "./app.js";
 import {addMarker, addPath, localMarkers, reloadMapElements} from "./markerManager.js";
-import {currentMap, faergria, kouyoukuni, kradian, map, markath, overlays} from "./mapConfig.js";
+import {changeBaseLayer, currentMap, faergria, kouyoukuni, kradian, map, markath, overlays} from "./mapConfig.js";
 
 export const imageHostUrl = "https://images.zetsuboushii.site"
 export const tomeUrl = "https://tome.zetsuboushii.site"
@@ -180,9 +180,11 @@ export function showSetPathModal(localMarkers) {
 export function zoomToMarkerByName(markerData) {
     let params = new URLSearchParams(window.location.search)
 
-    markerData[currentMap.name].forEach(marker => {
-        if (marker.name === params.get("marker")) {
-            map.setView([marker.y, marker.x], 1.5)
-        }
-    })
+    if (params.get("marker")) {
+        markerData[currentMap.name].forEach(marker => {
+            if (marker.name === params.get("marker")) {
+                map.setView([marker.y, marker.x], 1.5)
+            }
+        })
+    }
 }

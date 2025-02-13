@@ -2,10 +2,10 @@ import {map, faergria, kradian, currentMap, overlays} from './mapConfig.js'
 import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
 import {modes} from "./app.js";
 
-export let localMarkers = {"Faergria": [], "Kradian": []}
+export let localMarkers = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
 let activeMarkers = []
 
-export let localPaths = {"Faergria": [], "Kradian": []}
+export let localPaths = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
 let activePaths = []
 
 function unloadMapElements() {
@@ -126,7 +126,7 @@ export function reloadMapElements() {
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ship.png"}))
                 break
             case "Schrein":
-                marker.addTo(overlays.Sonstiges)
+                marker.addTo(overlays.Schreine)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shrine.png"}))
                 break
             case "Verlies":
@@ -143,11 +143,11 @@ export function reloadMapElements() {
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
                 break
             case "Tempel":
-                marker.addTo(overlays.Sonstiges)
+                marker.addTo(overlays.Tempel)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
                 break
             case "Kirche":
-                marker.addTo(overlays.Sonstiges)
+                marker.addTo(overlays.Tempel)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
                 break
             case "Grabmal":
@@ -186,7 +186,7 @@ export function reloadMapElements() {
     localPaths[currentMap.name].forEach(pathData => {
         const path = L.polyline(pathData.pathPoints, {
             dashArray: "40 20",
-            color: "#800020",
+            color: "#8f242b",
             weight: 5
         })
             .addTo(overlays.Wege)
