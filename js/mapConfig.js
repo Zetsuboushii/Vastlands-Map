@@ -1,5 +1,5 @@
 import {reloadMapElements, loadMapElementsFromFiles, localMarkers} from './markerManager.js'
-import {imageHostUrl, zoomToMarkerByName} from "./utils.js";
+import {imageHostUrl, tomeUrl, zoomToMarkerByName} from "./utils.js";
 
 export const faergria = {
     name: "Faergria",
@@ -55,7 +55,8 @@ export let baseMaps = {
 }
 
 export let overlays = {
-    "Wege": L.layerGroup([]),
+    "Routen": L.layerGroup([]),
+    "Bahnstrecken": L.layerGroup([]),
     "Ortschaften": L.layerGroup([]),
     "Tore": L.layerGroup([]),
     "Tempel": L.layerGroup([]),
@@ -74,6 +75,7 @@ export const map = L.map("map", {
 })
 
 export let layerControl = L.control.layers(baseMaps, overlays, {collapsed:false}).addTo(map)
+export let creditAttribution = L.control.attribution({prefix: "Vastlands Map"}).addAttribution("<a href=https://tome.zetsuboushii.site>Tome of the Vastlands</a> | &copy; Zetsu 2025").addTo(map)
 
 export function changeBaseLayer(layer) {
     switch (layer) {

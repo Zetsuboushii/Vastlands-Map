@@ -189,7 +189,7 @@ export function reloadMapElements() {
             color: "#8f242b",
             weight: 5
         })
-            .addTo(overlays.Wege)
+            .addTo(overlays.Routen)
 
         activePaths.push(path)
     })
@@ -221,8 +221,8 @@ export function loadMapElementsFromFiles() {
 
     fetch("data/map/paths.json")
         .then(response => response.json())
-        .then(markerData => {
-            localPaths = markerData
+        .then(pathData => {
+            localPaths = pathData
             reloadMapElements()
         })
         .catch(error => console.error("Error while loading paths:", error))
