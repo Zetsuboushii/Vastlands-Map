@@ -56,7 +56,7 @@ export let baseMaps = {
 
 export let overlays = {
     "Routen": L.layerGroup([]),
-    "Bahnstrecken": L.layerGroup([]),
+    "Regionen": L.layerGroup([]),
     "Ortschaften": L.layerGroup([]),
     "Tore": L.layerGroup([]),
     "Tempel": L.layerGroup([]),
@@ -64,9 +64,12 @@ export let overlays = {
     "Sonstiges": L.layerGroup([])
 }
 
+export const drawnRegions = new L.FeatureGroup();
+overlays.Regionen = drawnRegions;
+
 export const map = L.map("map", {
     crs: L.CRS.Simple,
-    layers: [currentMap.image, overlays.Ortschaften, overlays.Tore, overlays.Tempel, overlays.Schreine, overlays.Sonstiges],
+    layers: [currentMap.image, overlays.Ortschaften, overlays.Regionen, overlays.Tore, overlays.Tempel, overlays.Schreine, overlays.Sonstiges],
     maxBounds: faergria.bounds,
     maxBoundsViscosity: 1.0,
     minZoom: faergria.minZoom,
@@ -74,8 +77,10 @@ export const map = L.map("map", {
     attributionControl: false
 })
 
-export let layerControl = L.control.layers(baseMaps, overlays, {collapsed:false}).addTo(map)
-export let creditAttribution = L.control.attribution({prefix: "Vastlands Map"}).addAttribution("<a href=https://tome.zetsuboushii.site>Tome of the Vastlands</a> | &copy; Zetsu 2025").addTo(map)
+export let layerControl = L.control.layers(baseMaps, overlays, {collapsed: true}).addTo(map)
+export let creditAttribution = L.control.attribution({prefix: "Vastlands Map"})
+    .addAttribution("<a href=https://tome.zetsuboushii.site>Tome of the Vastlands</a> | &copy; Zetsu 2025")
+    .addTo(map)
 
 export function changeBaseLayer(layer) {
     switch (layer) {
@@ -107,3 +112,15 @@ map.on("baselayerchange", function (e) {
 
 map.fitBounds(currentMap.bounds)
 loadMapElementsFromFiles()
+
+map.on('draw:created', function (e) {
+    const layer = e.layer;
+    drawnRegions.addLayer(layer);
+    console.log("Region created:", JSON.stringify(drawnRegions.toGeoJSON(), null, 2));
+});
+map.on('draw:edited', function (e) {
+    console.log("Region edited:", JSON.stringify(drawnRegions.toGeoJSON(), null, 2));
+});
+map.on('draw:deleted', function (e) {
+    console.log("Region deleted:", JSON.stringify(drawnRegions.toGeoJSON(), null, 2));
+});

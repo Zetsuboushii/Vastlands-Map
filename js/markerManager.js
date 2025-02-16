@@ -1,12 +1,14 @@
-import {map, faergria, kradian, currentMap, overlays} from './mapConfig.js'
-import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
-import {modes} from "./app.js";
+import { map, faergria, kradian, currentMap, overlays, drawnRegions } from './mapConfig.js'
+import { CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName } from './utils.js'
+import { modes } from "./app.js";
 
 export let localMarkers = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
 let activeMarkers = []
 
 export let localPaths = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
 let activePaths = []
+
+export let localRegions = {}
 
 function unloadMapElements() {
     activeMarkers.forEach(marker => map.removeLayer(marker))
@@ -179,7 +181,6 @@ export function reloadMapElements() {
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_poi.png"}))
                 break
         }
-
         activeMarkers.push(marker)
     })
 
@@ -190,9 +191,46 @@ export function reloadMapElements() {
             weight: 5
         })
             .addTo(overlays.Routen)
-
         activePaths.push(path)
     })
+
+    fetch("data/map/" + currentMap.name.toLowerCase() + ".geojson")
+        .then(response => response.json())
+        .then(geojsonData => {
+            drawnRegions.clearLayers();
+            L.geoJSON(geojsonData, {
+                style: function(feature) {
+                    let regionColor = "#434449"
+                    switch (feature.properties.region) {
+                        case "Farodris":
+                            regionColor = "#4392dc"
+                            break
+                        case "Tinorland":
+                            regionColor = "#56bd42"
+                            break
+                        case "Hal":
+                            regionColor = "#9f1fb3"
+                            break
+                    }
+
+                    return {
+                        color: regionColor,
+                        weight: 4,
+                        fillOpacity: 0.1,
+                        opacity: 0.5,
+                        lineJoin: "round"
+                    }
+                },
+                onEachFeature: function(feature, layer) {
+                    if (feature.properties && feature.properties.name) {
+                        layer.bindTooltip(feature.properties.name, {permanent: true, direction:"center"})
+                    }
+                }
+            }).addTo(drawnRegions);
+
+            localRegions = geojsonData
+        })
+        .catch(error => console.error("Error while loading regions:", error))
 }
 
 export function loadMapElementsFromFiles() {

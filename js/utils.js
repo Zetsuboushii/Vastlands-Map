@@ -1,6 +1,6 @@
 import {modes} from "./app.js";
-import {addMarker, addPath, localMarkers, reloadMapElements} from "./markerManager.js";
-import {changeBaseLayer, currentMap, faergria, kouyoukuni, kradian, map, markath, overlays} from "./mapConfig.js";
+import {addMarker, addPath, localMarkers, localRegions, reloadMapElements} from "./markerManager.js";
+import {currentMap, drawnRegions, map} from "./mapConfig.js";
 
 export const imageHostUrl = "https://images.zetsuboushii.site"
 export const tomeUrl = "https://tome.zetsuboushii.site"
@@ -177,6 +177,50 @@ export function showSetPathModal(localMarkers) {
     document.body.appendChild(modal)
 }
 
+export function showGeoJsonModal() {
+    const geojsonData = drawnRegions.toGeoJSON();
+    const jsonString = JSON.stringify(geojsonData, null, 4);
+
+    const modal = document.createElement("div");
+    modal.style.position = "fixed";
+    modal.style.top = "50%";
+    modal.style.left = "50%";
+    modal.style.transform = "translate(-50%, -50%)";
+    modal.style.backgroundColor = "white";
+    modal.style.padding = "20px";
+    modal.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+    modal.style.zIndex = "1000";
+    modal.style.width = "80%";
+    modal.style.maxWidth = "600px";
+    modal.style.borderRadius = "8px";
+
+    const textArea = document.createElement("textarea");
+    textArea.value = jsonString;
+    textArea.style.width = "100%";
+    textArea.style.height = "300px";
+    textArea.style.marginBottom = "10px";
+    textArea.readOnly = true;
+
+    const copyButton = document.createElement("button");
+    copyButton.textContent = "Copy JSON";
+    copyButton.style.marginRight = "10px";
+    copyButton.onclick = () => {
+        textArea.select();
+        document.execCommand("copy");
+    };
+
+    const closeButton = document.createElement("button");
+    closeButton.textContent = "Close";
+    closeButton.onclick = () => {
+        document.body.removeChild(modal);
+    };
+
+    modal.appendChild(textArea);
+    modal.appendChild(copyButton);
+    modal.appendChild(closeButton);
+    document.body.appendChild(modal);
+}
+
 export function zoomToMarkerByName(markerData) {
     let params = new URLSearchParams(window.location.search)
 
@@ -184,6 +228,24 @@ export function zoomToMarkerByName(markerData) {
         markerData[currentMap.name].forEach(marker => {
             if (marker.name === params.get("marker")) {
                 map.setView([marker.y, marker.x], 1.5)
+                return 0
+            }
+        })
+
+        localRegions.features.forEach(region => {
+            if (params.get("marker") === region.properties.name) {
+                const coordinates = region.geometry.coordinates[0];
+
+                let sumLat = 0, sumLng = 0;
+                coordinates.forEach(coord => {
+                    sumLng += coord[0];
+                    sumLat += coord[1];
+                });
+
+                const centerLng = sumLng / coordinates.length;
+                const centerLat = sumLat / coordinates.length;
+
+                map.setView([centerLat, centerLng], 1.5);
             }
         })
     }
