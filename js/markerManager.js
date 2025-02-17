@@ -211,6 +211,12 @@ export function reloadMapElements() {
                         case "Hal":
                             regionColor = "#9f1fb3"
                             break
+                        case "Adrestia":
+                            regionColor = "#ee2828"
+                            break
+                        case "Thaugrien":
+                            regionColor = "#6a17e3"
+                            break
                     }
 
                     return {
