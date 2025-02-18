@@ -136,7 +136,7 @@
       "name": "Hindriks Sägemühle",
       "x": 1916.2593770155436,
       "y": 1822.9212818989195,
-      "placeType": "Wegpunkt"
+      "placeType": "Sägemühle"
     },
     {
       "name": "Tannivhs Haus",
@@ -575,6 +575,12 @@
       "x": 1067.0241328105,
       "y": 2053.4380925657338,
       "placeType": "Brücke"
+    },
+    {
+      "name": "Schwerthain",
+      "x": 2158,
+      "y": 2896,
+      "placeType": "Hain"
     }
   ],
   "Markath": [

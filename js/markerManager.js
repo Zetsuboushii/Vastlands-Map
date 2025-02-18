@@ -75,9 +75,7 @@ export function reloadMapElements() {
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_farm.png"}))
                 break
             case "Lichtung":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_grove.png"}))
-                break
+            case "Hain":
             case "Grotte":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_grove.png"}))
