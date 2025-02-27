@@ -243,7 +243,7 @@ export function loadMapElementsFromFiles() {
     fetch("data/map/markers.json")
         .then(response => response.json())
         .then(markerData => {
-            fetch(`${tomeUrl}/api/places.json`)
+            fetch(`${tomeUrl}/static/json/places.json`)
                 .then(response => response.json())
                 .then(apiData => {
                     for (const layerName in markerData) {
