@@ -215,6 +215,15 @@ export function reloadMapElements() {
                         case "Thaugrien":
                             regionColor = "#6a17e3"
                             break
+                        case "Inidal":
+                            regionColor = "#a8622c"
+                            break
+                        case "Kluirm":
+                            regionColor = "#ffe43c"
+                            break
+                        case "Escrigria":
+                            regionColor = "#ffffff"
+                            break
                     }
 
                     return {
