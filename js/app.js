@@ -89,7 +89,7 @@ map.on("click", function (e) {
         if (!name) {
             return
         }
-        fetch(`${tomeUrl}/api/places.json`)
+        fetch(`${tomeUrl}/static/json/places.json`)
             .then(response => response.json())
             .then(data => {
                 if (data.find(item => item.name.toLowerCase() === name.toLowerCase())) {
