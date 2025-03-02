@@ -224,6 +224,9 @@ export function reloadMapElements() {
                         case "Escrigria":
                             regionColor = "#ffffff"
                             break
+                        case "Hydracion":
+                            regionColor = "#472f2f"
+                            break
                     }
 
                     return {
