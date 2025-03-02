@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dickicht der Wahrheit",
+        "region": "Farodris"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10,
+              10
+            ],
+            [
+              11,
+              11
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
