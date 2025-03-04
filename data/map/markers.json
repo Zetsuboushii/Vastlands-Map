@@ -581,6 +581,12 @@
       "x": 2158,
       "y": 2896,
       "placeType": "Hain"
+    },
+    {
+      "name": "Kloster der Heilenden Hand",
+      "x": 2289.2582040914476,
+      "y": 1656.0440815388943,
+      "placeType": "Kloster"
     }
   ],
   "Markath": [
