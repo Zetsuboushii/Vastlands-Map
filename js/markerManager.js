@@ -110,6 +110,7 @@ export function reloadMapElements() {
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ruins.png"}))
                 break
             case "Hütte":
+            case "Friedhof":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
                 break

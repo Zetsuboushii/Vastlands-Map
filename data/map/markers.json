@@ -587,6 +587,12 @@
       "x": 2289.2582040914476,
       "y": 1656.0440815388943,
       "placeType": "Kloster"
+    },
+    {
+      "name": "Letzte Ruhestätte der Könige",
+      "x": 2306.5,
+      "y": 1487,
+      "placeType": "Friedhof"
     }
   ],
   "Markath": [
