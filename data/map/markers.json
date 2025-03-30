@@ -593,6 +593,18 @@
       "x": 2306.5,
       "y": 1487,
       "placeType": "Friedhof"
+    },
+    {
+      "name": "Tor im Tempelgarten",
+      "x": 1233.9013331705253,
+      "y": 1574.0196949212548,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Kultstätte",
+      "x": 2353.9584745700167,
+      "y": 1264.66047815214,
+      "placeType": "Tempel"
     }
   ],
   "Markath": [
