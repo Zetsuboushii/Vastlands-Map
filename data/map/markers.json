@@ -91,12 +91,6 @@
       "placeType": "Stadt"
     },
     {
-      "name": "Daein",
-      "x": 2474,
-      "y": 1621,
-      "placeType": "Dorf"
-    },
-    {
       "name": "Teryvnat",
       "x": 1575,
       "y": 1728.75,
@@ -125,12 +119,6 @@
       "x": 1640,
       "y": 2130,
       "placeType": "Stadt"
-    },
-    {
-      "name": "Brodia",
-      "x": 2060.155606987006,
-      "y": 1837.0634175226503,
-      "placeType": "Dorf"
     },
     {
       "name": "Hindriks Sägemühle",
@@ -605,6 +593,48 @@
       "x": 2353.9584745700167,
       "y": 1264.66047815214,
       "placeType": "Tempel"
+    },
+    {
+      "name": "Tor am Klosterpass",
+      "x": 2265.6217590081437,
+      "y": 1634.9080332850665,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Tor im Geisterwald",
+      "x": 2322.1903015030675,
+      "y": 1518.2354143892862,
+      "placeType": "Tor"
+    },
+    {
+      "name": "Daein",
+      "x": 2488.662316386054,
+      "y": 1595.2328983568511,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Brodia",
+      "x": 2045.3063645820885,
+      "y": 1816.5573208682404,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Wirbelsturm-Altar",
+      "x": 3281.0263933908577,
+      "y": 799.6230185498517,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Reich des Windes",
+      "x": 3347,
+      "y": 905,
+      "placeType": "Schloss"
+    },
+    {
+      "name": "Citrios Hütte",
+      "x": 2395.677774660023,
+      "y": 1598.4148788721905,
+      "placeType": "Hütte"
     }
   ],
   "Markath": [
