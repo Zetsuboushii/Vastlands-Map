@@ -641,6 +641,12 @@
       "x": 3321.6341046238067,
       "y": 890.6009909044566,
       "placeType": "Tor"
+    },
+    {
+      "name": "Ahnen-Ausgrabungsstätte",
+      "x": 1591.5,
+      "y": 2731,
+      "placeType": "Höhle"
     }
   ],
   "Markath": [
@@ -659,18 +665,36 @@
   ],
   "Kradian": [
     {
-      "name": "Knechto",
-      "x": 883,
-      "y": 2244,
-      "placeType": "Tor"
+      "name": "Riesstedt",
+      "x": 1528.5330719435087,
+      "y": 115,
+      "placeType": "Dorf"
+    },
+    {
+      "name": "Südliche Oase",
+      "x": 2348,
+      "y": 1381,
+      "placeType": "Ruine"
+    },
+    {
+      "name": "Geheimer Banditenunterschlupf",
+      "x": 2454,
+      "y": 1504,
+      "placeType": "Höhle"
+    },
+    {
+      "name": "Mesmudor",
+      "x": 361,
+      "y": 1967,
+      "placeType": "Hauptstadt"
     }
   ],
   "Kouyoukuni": [
     {
-      "name": "Knechto",
-      "x": 883,
-      "y": 2244,
-      "placeType": "Tor"
+      "name": "Akikamida",
+      "x": 2126,
+      "y": 1893,
+      "placeType": "Hauptstadt"
     }
   ]
 }
