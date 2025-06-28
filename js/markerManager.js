@@ -1,6 +1,6 @@
-import { map, faergria, kradian, currentMap, overlays, drawnRegions } from './mapConfig.js'
-import { CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName } from './utils.js'
-import { modes } from "./app.js";
+import {map, faergria, kradian, currentMap, overlays, drawnRegions} from './mapConfig.js'
+import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
+import {modes} from "./app.js";
 
 export let localMarkers = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
 let activeMarkers = []
@@ -198,7 +198,7 @@ export function reloadMapElements() {
         .then(geojsonData => {
             drawnRegions.clearLayers();
             L.geoJSON(geojsonData, {
-                style: function(feature) {
+                style: function (feature) {
                     let regionColor = "#434449"
                     switch (feature.properties.region) {
                         case "Farodris":
@@ -228,6 +228,9 @@ export function reloadMapElements() {
                         case "Hydracion":
                             regionColor = "#472f2f"
                             break
+                        case "Markath":
+                            regionColor = "#000000"
+                            break
                     }
 
                     return {
@@ -238,9 +241,9 @@ export function reloadMapElements() {
                         lineJoin: "round"
                     }
                 },
-                onEachFeature: function(feature, layer) {
+                onEachFeature: function (feature, layer) {
                     if (feature.properties && feature.properties.name) {
-                        layer.bindTooltip(feature.properties.name, {permanent: true, direction:"center"})
+                        layer.bindTooltip(feature.properties.name, {permanent: true, direction: "center"})
                     }
                 }
             }).addTo(drawnRegions);
@@ -307,3 +310,4 @@ export function addPath(pathPoints, start, goal) {
     showLocalsJsonModal(localPaths)
     reloadMapElements()
 }
+

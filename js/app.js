@@ -1,4 +1,4 @@
-import {map, drawnRegions} from './mapConfig.js'
+import {map, drawnRegions, overlays} from './mapConfig.js'
 import {addMarker, localMarkers} from './markerManager.js'
 import {pathPoints, showGeoJsonModal, showSetPathModal, tomeUrl} from "./utils.js";
 
@@ -105,4 +105,48 @@ map.on("click", function (e) {
     } else if (modes.deleteMarker) {
 
     }
+})
+
+let markerElements = document.querySelectorAll(".leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-center")
+let markerGroups = {}
+
+markerElements.forEach(m => {
+    let tooltipId = m.getAttribute("id")
+    if (!tooltipId) return
+
+    let tooltipElement = document.getElementById(tooltipId)
+    if (!tooltipElement) return
+
+    let tooltipText = tooltipElement.innerText.trim()
+    if (!tooltipText) return
+
+    let latLng = m._leaflet_pos
+    if (!latLng) return
+
+    let lat = latLng.y, lng = latLng.x
+
+    if (!markerGroups[tooltipText]) markerGroups[tooltipText] = []
+
+    markerGroups[tooltipText].push([lat, lng])
+})
+
+Object.keys(markerGroups).forEach(name => {
+    let coords = markerGroups[name]
+
+    if (coords.length < 2) return
+
+    let latSum = 0, lngSum = 0
+    coords.forEach(coord => {
+        latSum += coord[0]
+        lngSum += coord[1]
+    })
+    let center = L.latLng(latSum / coords.length, lngsum / coords.length)
+
+    let centerTooltip = L.tooltip({
+        permanent: false,
+        direction: "top"
+    }).setContent(name)
+
+    let tempMarker = L.marker(center, {permanent: true, direction: "center"})
+    tempMarker.addTo(overlays.Regionen).bindTooltip(centerTooltip).openTooltip()
 })
