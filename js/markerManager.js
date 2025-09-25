@@ -2,10 +2,10 @@ import {map, faergria, kradian, currentMap, overlays, drawnRegions} from './mapC
 import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
 import {modes} from "./app.js";
 
-export let localMarkers = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
+export let localMarkers = {"Faergria": [], "Kradian": [], "Markath": [], "Tougenkyou": []}
 let activeMarkers = []
 
-export let localPaths = {"Faergria": [], "Kradian": [], "Markath": [], "Kouyoukuni": []}
+export let localPaths = {"Faergria": [], "Kradian": [], "Markath": [], "Tougenkyou": []}
 let activePaths = []
 
 export let localRegions = {}

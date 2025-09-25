@@ -19,8 +19,8 @@ export const kradian = {
     image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.png`, [[0, 0], [4000, 2800]]),
     minZoom: -2
 }
-export const kouyoukuni = {
-    name: "Kouyoukuni",
+export const tougenkyou = {
+    name: "Tougenkyou",
     bounds: [[0, 0], [4000, 4000]],
     image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kouyoukuni.png`, [[0, 0], [4000, 4000]]),
     minZoom: -2
@@ -37,8 +37,8 @@ switch (params.get("map")) {
     case "Kradian":
         currentMap = kradian
         break
-    case "kouyoukuni":
-        currentMap = kouyoukuni
+    case "tougenkyou":
+        currentMap = tougenkyou
         break
     case "Markath":
         currentMap = markath
@@ -51,7 +51,7 @@ export let baseMaps = {
     "Faergria": faergria.image,
     "Markath": markath.image,
     "Kradian": kradian.image,
-    "Kouyoukuni": kouyoukuni.image
+    "Tougenkyou": tougenkyou.image
 }
 
 export let overlays = {
@@ -93,8 +93,8 @@ export function changeBaseLayer(layer) {
         case markath.image:
             currentMap = markath
             break
-        case kouyoukuni.image:
-            currentMap = kouyoukuni
+        case tougenkyou.image:
+            currentMap = tougenkyou
             break
     }
     map.setMaxBounds(currentMap.bounds)
