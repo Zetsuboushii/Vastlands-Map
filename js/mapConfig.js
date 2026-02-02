@@ -14,7 +14,7 @@ export const markath = {
     minZoom: -1
 }
 export const kradian = {
-    name: "Kradian",
+    name: "Uastrun",
     bounds: [[0, 0], [4000, 2800]],
     image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.png`, [[0, 0], [4000, 2800]]),
     minZoom: -2
@@ -34,7 +34,7 @@ switch (params.get("map")) {
     case "Faergria":
         currentMap = faergria
         break
-    case "Kradian":
+    case "Uastrun":
         currentMap = kradian
         break
     case "tougenkyou":
@@ -50,7 +50,7 @@ switch (params.get("map")) {
 export let baseMaps = {
     "Faergria": faergria.image,
     "Markath": markath.image,
-    "Kradian": kradian.image,
+    "Uastrun": kradian.image,
     "Tougenkyou": tougenkyou.image
 }
 

@@ -2,10 +2,10 @@ import {map, faergria, kradian, currentMap, overlays, drawnRegions} from './mapC
 import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
 import {modes} from "./app.js";
 
-export let localMarkers = {"Faergria": [], "Kradian": [], "Markath": [], "Tougenkyou": []}
+export let localMarkers = {"Faergria": [], "Uastrun": [], "Markath": [], "Tougenkyou": []}
 let activeMarkers = []
 
-export let localPaths = {"Faergria": [], "Kradian": [], "Markath": [], "Tougenkyou": []}
+export let localPaths = {"Faergria": [], "Uastrun": [], "Markath": [], "Tougenkyou": []}
 let activePaths = []
 
 export let localRegions = {}
@@ -257,7 +257,7 @@ export function loadMapElementsFromFiles() {
     fetch("data/map/markers.json")
         .then(response => response.json())
         .then(markerData => {
-            fetch(`${tomeUrl}/static/json/places.json`)
+            fetch(`${tomeUrl}/static/api/v2/locations.json`)
                 .then(response => response.json())
                 .then(apiData => {
                     for (const layerName in markerData) {
