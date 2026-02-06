@@ -323,6 +323,76 @@
           "y": 3076,
           "type": "Taverne",
           "text": ""
+        },
+        {
+          "name": "L'Abbaye de Montechiaro",
+          "x": 1507,
+          "y": 3423,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Castel Fiorenza",
+          "x": 845,
+          "y": 4996,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Argentia",
+          "x": 883,
+          "y": 4096,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Mercatovecchio",
+          "x": 1141,
+          "y": 3561,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Oriveto",
+          "x": 414,
+          "y": 3753,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Vindhavn",
+          "x": 1619,
+          "y": 752,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Ulvvik",
+          "x": 2088,
+          "y": 1119,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Jarlsgard",
+          "x": 1790,
+          "y": 949,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Skjoldheim",
+          "x": 1494,
+          "y": 837,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Brusted",
+          "x": 1892,
+          "y": 1012,
+          "type": "Dorf",
+          "text": ""
         }
       ],
       "regions": []

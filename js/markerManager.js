@@ -58,6 +58,7 @@ export function reloadMapElements() {
                 marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
                 break
             case "Lager":
+            case "Monsterlager":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_camp.png"}))
                 break
