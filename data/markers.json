@@ -8,13 +8,310 @@
           "x": 1205,
           "y": 1460,
           "type": "Dorf",
-          "text": "<h2>habibi</h2><p></p><p>bobo</p>"
+          "text": "<h4>habibi</h4><p></p><p>bobo</p>"
         },
         {
           "name": "Yerenas",
           "x": 1240,
           "y": 2454,
           "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Teryvnat",
+          "x": 1573,
+          "y": 2266,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Frelia",
+          "x": 1074,
+          "y": 2079,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Lycia",
+          "x": 1642,
+          "y": 1881,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Elpis",
+          "x": 1405,
+          "y": 1976,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Grenbrock",
+          "x": 921,
+          "y": 1398,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Tarporbach",
+          "x": 1165,
+          "y": 1695,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Korshaven",
+          "x": 803,
+          "y": 1905,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Tellius",
+          "x": 1263,
+          "y": 1187,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Garadzar",
+          "x": 1379,
+          "y": 1158,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Nordholm",
+          "x": 1176,
+          "y": 641,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Schachendorf",
+          "x": 1054,
+          "y": 1044,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Krofenheim",
+          "x": 1429,
+          "y": 778,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Alt-Aegir",
+          "x": 2489,
+          "y": 3733,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Daein",
+          "x": 2493,
+          "y": 2400,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Nifl",
+          "x": 2447,
+          "y": 2016,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Tinorke",
+          "x": 2811,
+          "y": 1592,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Aegir",
+          "x": 2237,
+          "y": 1420,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Orrin",
+          "x": 2143,
+          "y": 1146,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Renais",
+          "x": 2596,
+          "y": 1259,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Niddarvellir",
+          "x": 2657,
+          "y": 852,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Tor an der östlichen Brücke",
+          "x": 1447,
+          "y": 1758,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor an der Südstraße",
+          "x": 1113,
+          "y": 2148,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor im Tempelgarten",
+          "x": 1265,
+          "y": 2411,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Brodia",
+          "x": 2049,
+          "y": 2181,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Tor am Bergpass",
+          "x": 2370,
+          "y": 1985,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor in den Sümpfen",
+          "x": 2761,
+          "y": 1763,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor der Diebesstadt",
+          "x": 2621,
+          "y": 839,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor des Himmelsklosters",
+          "x": 1038,
+          "y": 929,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor des Klosters",
+          "x": 1445,
+          "y": 2073,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor der Schneeberge",
+          "x": 1052,
+          "y": 661,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor des Friedhofs",
+          "x": 2337,
+          "y": 2485,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor im Himmel",
+          "x": 3390,
+          "y": 3218,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor des Plateaus",
+          "x": 2080,
+          "y": 1197,
+          "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Tor am Blitzaltar",
+          "x": 1422,
+          "y": 1287,
+          "type": "Tor",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "Uastrun",
+      "places": [
+        {
+          "name": "Thycoria",
+          "x": 1684,
+          "y": 3127,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Mesmudor",
+          "x": 1175,
+          "y": 2306,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Bainnoque",
+          "x": 2046,
+          "y": 1952,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Dorf der Liphias",
+          "x": 1637,
+          "y": 1352,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Dhoqan",
+          "x": 2325,
+          "y": 2373,
+          "type": "Stadt",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "Markath",
+      "places": [
+        {
+          "name": "Llurthargothr",
+          "x": 387,
+          "y": 469,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Undraridor",
+          "x": 1558,
+          "y": 882,
+          "type": "Dorf",
           "text": ""
         }
       ]

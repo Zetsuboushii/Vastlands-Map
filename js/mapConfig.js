@@ -15,8 +15,8 @@ export const markath = {
 }
 export const kradian = {
     name: "Uastrun",
-    bounds: [[0, 0], [4000, 2800]],
-    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.png`, [[0, 0], [4000, 2800]]),
+    bounds: [[0, 0], [8800, 6000]],
+    image: L.imageOverlay(`${imageHostUrl}/dnd/charts/kradian.png`, [[0, 0], [8800, 6000]]),
     minZoom: -2
 }
 export const tougenkyou = {
