@@ -5,6 +5,16 @@ import {currentMap, drawnRegions, map} from "./mapConfig.js";
 export const imageHostUrl = "https://images.zetsuboushii.site"
 export const tomeUrl = "https://tome.zetsuboushii.site"
 
+export function chartToLatLng(x, y) {
+    const mapHeight = currentMap.bounds[1][0]; // bounds: [[0,0],[height,width]]
+    return {lat: mapHeight - y, lng: x};
+}
+
+export function latLngToChart(lat, lng) {
+    const mapHeight = currentMap.bounds[1][0];
+    return {x: lng, y: mapHeight - lat};
+}
+
 export const CrestIcon = L.Icon.extend({
     options: {
         iconSize: [48, 57.5],

@@ -1,5 +1,14 @@
 import {map, faergria, kradian, currentMap, overlays, drawnRegions} from './mapConfig.js'
-import {CrestIcon, GenericIcon, imageHostUrl, showLocalsJsonModal, tomeUrl, zoomToMarkerByName} from './utils.js'
+import {
+    CrestIcon,
+    GenericIcon,
+    imageHostUrl,
+    showLocalsJsonModal,
+    tomeUrl,
+    zoomToMarkerByName,
+    chartToLatLng,
+    latLngToChart
+} from './utils.js'
 import {modes} from "./app.js";
 
 export let localMarkers = {"Faergria": [], "Uastrun": [], "Markath": [], "Tougenkyou": []}
@@ -22,7 +31,8 @@ export function reloadMapElements() {
     unloadMapElements()
 
     localMarkers[currentMap.name].forEach(markerData => {
-        const marker = L.marker([markerData.y, markerData.x])
+        const ll = chartToLatLng(markerData.x, markerData.y)
+        const marker = L.marker([ll.lat, ll.lng])
             .bindPopup(`<b>${markerData.name}</b><br>${markerData.placeType || "Unknown place"}`)
             .on('mouseover', function (e) {
                 this.openPopup()
@@ -254,28 +264,30 @@ export function reloadMapElements() {
 }
 
 export function loadMapElementsFromFiles() {
-    fetch("data/map/markers.json")
-        .then(response => response.json())
-        .then(markerData => {
-            fetch(`${tomeUrl}/static/api/v2/locations.json`)
-                .then(response => response.json())
-                .then(apiData => {
-                    for (const layerName in markerData) {
-                        markerData[layerName] = markerData[layerName].map(marker => {
-                            const apiPlace = apiData.find(item => item.name === marker.name)
-                            if (apiPlace) {
-                                marker.placeType = apiPlace.placetype
-                            }
-                            return marker
-                        })
-                    }
-                    localMarkers = markerData
-                    reloadMapElements()
+    fetch("data/markers.json")
+        .then(res => res.json())
+        .then(geo => {
+            const nextMarkers = {"Faergria": [], "Uastrun": [], "Markath": [], "Tougenkyou": []};
+            (geo.charts || []).forEach(chart => {
+                const chartName = chart.name
+                if (!nextMarkers[chartName]) nextMarkers[chartName] = [];
+                (chart.places || []).forEach(p => {
+                    nextMarkers[chartName].push({
+                        name: p.name,
+                        x: p.x,
+                        y: p.y,
+                        placeType: p.type,
+                        type: p.type
+                    })
                 })
-                .catch(error => console.error("Error while fetching place types:", error))
-            zoomToMarkerByName(markerData)
+            })
+
+            localMarkers = nextMarkers
+            reloadMapElements()
+
+            zoomToMarkerByName(localMarkers)
         })
-        .catch(error => console.error("Error while loading markers:", error))
+        .catch(err => console.error("Error while loading tome markers:", err))
 
     fetch("data/map/paths.json")
         .then(response => response.json())
@@ -285,6 +297,7 @@ export function loadMapElementsFromFiles() {
         })
         .catch(error => console.error("Error while loading paths:", error))
 }
+
 
 export function addMarker(latlng, place) {
     const marker = L.marker(latlng)
