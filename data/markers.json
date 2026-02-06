@@ -255,7 +255,8 @@
           "type": "Tor",
           "text": ""
         }
-      ]
+      ],
+      "regions": []
     },
     {
       "name": "Uastrun",
@@ -294,8 +295,37 @@
           "y": 2373,
           "type": "Stadt",
           "text": ""
+        },
+        {
+          "name": "Waldtempel",
+          "x": 1753,
+          "y": 3115,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Spinnenhöhle",
+          "x": 1476,
+          "y": 3149,
+          "type": "Höhle",
+          "text": ""
+        },
+        {
+          "name": "Goblin-Lager",
+          "x": 1720,
+          "y": 3196,
+          "type": "Monsterlager",
+          "text": ""
+        },
+        {
+          "name": "Abenteurergilde des Waldes",
+          "x": 1703,
+          "y": 3076,
+          "type": "Taverne",
+          "text": ""
         }
-      ]
+      ],
+      "regions": []
     },
     {
       "name": "Markath",
@@ -314,7 +344,8 @@
           "type": "Dorf",
           "text": ""
         }
-      ]
+      ],
+      "regions": []
     }
   ]
 }
