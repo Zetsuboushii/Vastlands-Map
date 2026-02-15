@@ -1,7 +1,27 @@
 {
   "charts": [
     {
-      "name": "Faergria",
+      "name": "Tenebris - Markath",
+      "places": [
+        {
+          "name": "Llurthargothr",
+          "x": 387,
+          "y": 469,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Undraridor",
+          "x": 1558,
+          "y": 882,
+          "type": "Dorf",
+          "text": ""
+        }
+      ],
+      "regions": []
+    },
+    {
+      "name": "Terralithia - Faergria",
       "places": [
         {
           "name": "Dünsberg",
@@ -259,7 +279,7 @@
       "regions": []
     },
     {
-      "name": "Uastrun",
+      "name": "Terralithia - Uastrun",
       "places": [
         {
           "name": "Thycoria",
@@ -393,24 +413,18 @@
           "y": 1012,
           "type": "Dorf",
           "text": ""
-        }
-      ],
-      "regions": []
-    },
-    {
-      "name": "Markath",
-      "places": [
+        },
         {
-          "name": "Llurthargothr",
-          "x": 387,
-          "y": 469,
-          "type": "Stadt",
+          "name": "Schmiede im Wald",
+          "x": 1634,
+          "y": 2947,
+          "type": "house",
           "text": ""
         },
         {
-          "name": "Undraridor",
-          "x": 1558,
-          "y": 882,
+          "name": "Llyn",
+          "x": 1525,
+          "y": 2517,
           "type": "Dorf",
           "text": ""
         }
