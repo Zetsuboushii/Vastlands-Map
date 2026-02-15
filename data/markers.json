@@ -1,7 +1,7 @@
 {
   "charts": [
     {
-      "name": "Tenebris - Markath",
+      "name": "Markath",
       "places": [
         {
           "name": "Llurthargothr",
@@ -21,7 +21,7 @@
       "regions": []
     },
     {
-      "name": "Terralithia - Faergria",
+      "name": "Faergria",
       "places": [
         {
           "name": "Dünsberg",
@@ -279,7 +279,7 @@
       "regions": []
     },
     {
-      "name": "Terralithia - Uastrun",
+      "name": "Uastrun",
       "places": [
         {
           "name": "Thycoria",
