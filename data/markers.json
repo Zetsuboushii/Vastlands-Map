@@ -270,9 +270,387 @@
         },
         {
           "name": "Tor am Blitzaltar",
-          "x": 1422,
-          "y": 1287,
+          "x": 1430,
+          "y": 1289,
           "type": "Tor",
+          "text": ""
+        },
+        {
+          "name": "Jagdschloss Dünsberg",
+          "x": 1114,
+          "y": 1405,
+          "type": "Burg",
+          "text": "<h4>habibi</h4><p></p><p>bobo</p>"
+        },
+        {
+          "name": "Drakensumpf",
+          "x": 2569,
+          "y": 803,
+          "type": "oak",
+          "text": ""
+        },
+        {
+          "name": "Lichtung des Mondzirkels",
+          "x": 2897,
+          "y": 797,
+          "type": "oak",
+          "text": ""
+        },
+        {
+          "name": "Wirrwald",
+          "x": 2900,
+          "y": 945,
+          "type": "oak",
+          "text": ""
+        },
+        {
+          "name": "Schwerthain",
+          "x": 2195,
+          "y": 1100,
+          "type": "oak",
+          "text": ""
+        },
+        {
+          "name": "Sternstaubinsel",
+          "x": 2804,
+          "y": 979,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Höhlenheiligtum des Kämpfers",
+          "x": 1423,
+          "y": 619,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Kronenpass",
+          "x": 1030,
+          "y": 552,
+          "type": "Berg",
+          "text": ""
+        },
+        {
+          "name": "Schneespitze",
+          "x": 1101,
+          "y": 472,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Kloster der Himmlischen Recken",
+          "x": 994,
+          "y": 937,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Windige Kirchenruine",
+          "x": 1097,
+          "y": 1040,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Schicksalspass",
+          "x": 1083,
+          "y": 1135,
+          "type": "Berg",
+          "text": ""
+        },
+        {
+          "name": "Schicksalstempel",
+          "x": 1118,
+          "y": 1083,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Giftdornsee",
+          "x": 1369,
+          "y": 2670,
+          "type": "waterfall",
+          "text": ""
+        },
+        {
+          "name": "Inidal-Grenzposten",
+          "x": 1606,
+          "y": 2880,
+          "type": "statue",
+          "text": ""
+        },
+        {
+          "name": "Tempel der Zeit",
+          "x": 1786,
+          "y": 2731,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Taverne an der Südstraße",
+          "x": 1069,
+          "y": 2157,
+          "type": "Taverne",
+          "text": ""
+        },
+        {
+          "name": "Elpis-Brücke",
+          "x": 1463,
+          "y": 1814,
+          "type": "bridge",
+          "text": ""
+        },
+        {
+          "name": "Kloster Schicksalsweg",
+          "x": 1483,
+          "y": 2097,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Grabmal der Alten Fürsten",
+          "x": 1428,
+          "y": 2019,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Dorf über den Wolken",
+          "x": 3448,
+          "y": 3121,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Schloss über den Wolken",
+          "x": 3402,
+          "y": 3088,
+          "type": "Burg",
+          "text": ""
+        },
+        {
+          "name": "Große Mauer von Alt-Aegir",
+          "x": 2578,
+          "y": 3736,
+          "type": "statue",
+          "text": ""
+        },
+        {
+          "name": "Larudia",
+          "x": 2496,
+          "y": 2968,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Endlose Bücherei der Erinnerungen",
+          "x": 2313,
+          "y": 2697,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Kristallmine",
+          "x": 1610,
+          "y": 1181,
+          "type": "Höhle",
+          "text": ""
+        },
+        {
+          "name": "Blitzaltar",
+          "x": 1400,
+          "y": 1251,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Bernsteintempel",
+          "x": 1387,
+          "y": 1293,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Grollender Bergpass",
+          "x": 1454,
+          "y": 1251,
+          "type": "Berg",
+          "text": ""
+        },
+        {
+          "name": "Alt-Dünsberg",
+          "x": 1255,
+          "y": 1444,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Wurzelschrein",
+          "x": 1138,
+          "y": 1447,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Alte Zollburg",
+          "x": 1312,
+          "y": 1412,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Vampirschloss",
+          "x": 1210,
+          "y": 1237,
+          "type": "Burg",
+          "text": ""
+        },
+        {
+          "name": "Große Zwergenbrücke",
+          "x": 1289,
+          "y": 1307,
+          "type": "bridge",
+          "text": ""
+        },
+        {
+          "name": "Versunkene Burg",
+          "x": 1294,
+          "y": 1125,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Meerestempel",
+          "x": 1325,
+          "y": 1097,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Tunnel des Aufstiegs",
+          "x": 1335,
+          "y": 1307,
+          "type": "Höhle",
+          "text": ""
+        },
+        {
+          "name": "Tunnel zum Meeresreich",
+          "x": 1226,
+          "y": 1113,
+          "type": "Höhle",
+          "text": ""
+        },
+        {
+          "name": "Seeschrein",
+          "x": 1241,
+          "y": 1150,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Tarporsee",
+          "x": 1073,
+          "y": 1638,
+          "type": "waterfall",
+          "text": ""
+        },
+        {
+          "name": "Schicksalssee",
+          "x": 1312,
+          "y": 2093,
+          "type": "waterfall",
+          "text": ""
+        },
+        {
+          "name": "Schrein der Harmonie",
+          "x": 1171,
+          "y": 1635,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Grotte des Lebens",
+          "x": 1015,
+          "y": 1763,
+          "type": "Höhle",
+          "text": ""
+        },
+        {
+          "name": "Taverne an der Brücke",
+          "x": 1407,
+          "y": 1766,
+          "type": "Taverne",
+          "text": ""
+        },
+        {
+          "name": "Taverne von Linus",
+          "x": 2003,
+          "y": 2211,
+          "type": "Taverne",
+          "text": ""
+        },
+        {
+          "name": "Hindriks Sägemühle",
+          "x": 1857,
+          "y": 2175,
+          "type": "windmill",
+          "text": ""
+        },
+        {
+          "name": "Sümpfe des Vergessens",
+          "x": 2708,
+          "y": 1790,
+          "type": "oak",
+          "text": ""
+        },
+        {
+          "name": "Alte Greifenburg",
+          "x": 2707,
+          "y": 2051,
+          "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Altar der Funken",
+          "x": 2425,
+          "y": 1868,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Feuersanktuarium",
+          "x": 2398,
+          "y": 1844,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Glühender Bergpass",
+          "x": 2379,
+          "y": 1920,
+          "type": "Berg",
+          "text": ""
+        },
+        {
+          "name": "Hufeisentaverne",
+          "x": 2302,
+          "y": 1900,
+          "type": "Taverne",
+          "text": ""
+        },
+        {
+          "name": "Kloster der Heilenden Hand",
+          "x": 2229,
+          "y": 2359,
+          "type": "Tempel",
+          "text": ""
+        },
+        {
+          "name": "Letzte Ruhestätte der Könige",
+          "x": 2301,
+          "y": 2516,
+          "type": "Tempel",
           "text": ""
         }
       ],
