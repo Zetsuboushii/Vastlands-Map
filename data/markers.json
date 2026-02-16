@@ -677,7 +677,7 @@
           "name": "Bainnoque",
           "x": 2046,
           "y": 1952,
-          "type": "Dorf",
+          "type": "Stadt",
           "text": ""
         },
         {
@@ -745,8 +745,8 @@
         },
         {
           "name": "Mercatovecchio",
-          "x": 1141,
-          "y": 3561,
+          "x": 1166,
+          "y": 4048,
           "type": "Stadt",
           "text": ""
         },
@@ -804,6 +804,90 @@
           "x": 1525,
           "y": 2517,
           "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Ailhelm",
+          "x": 1140,
+          "y": 1546,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Sarmont",
+          "x": 1876,
+          "y": 2549,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Basin",
+          "x": 1421,
+          "y": 2070,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Cavirn",
+          "x": 1530,
+          "y": 1687,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Roccaforte",
+          "x": 1141,
+          "y": 3557,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Cineria",
+          "x": 523,
+          "y": 4019,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Selvombra",
+          "x": 509,
+          "y": 3426,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Mirafiore",
+          "x": 749,
+          "y": 3523,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Acquascura",
+          "x": 883,
+          "y": 4452,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Ossario",
+          "x": 1001,
+          "y": 3735,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Ramala-Zarqa",
+          "x": 2130,
+          "y": 2519,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Safira",
+          "x": 2679,
+          "y": 2468,
+          "type": "Stadt",
           "text": ""
         }
       ],
