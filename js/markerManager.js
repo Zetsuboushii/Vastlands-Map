@@ -51,138 +51,64 @@ export function reloadMapElements() {
             })
 
         switch (markerData.placeType) {
-            case "Hauptstadt":
             case "Stadt":
             case "Dorf":
                 marker.addTo(overlays.Ortschaften)
                 marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
                 break
-            case "Lager":
             case "Monsterlager":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_camp.png"}))
                 break
-            case "Schloss":
-            case "Jagdschloss":
+            case "Heiligtum":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_castle.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shrine.png"}))
                 break
-            case "Höhle":
+            case "Haus":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_cave.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
                 break
-            case "Tunnel":
+            case "Brücke":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_cave.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_stronghold.png"}))
                 break
-            case "Dock":
-            case "Hafen":
+            case "Befestigung":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_dock.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_stronghold.png"}))
                 break
-            case "Feld":
-            case "Farm":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_farm.png"}))
-                break
-            case "Lichtung":
-            case "Hain":
-            case "Grotte":
+            case "Wald":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_grove.png"}))
                 break
-            case "Mine":
+            case "Schloss":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_mine.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_castle.png"}))
                 break
-            case "Tor":
-                marker.addTo(overlays.Tore)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_occult.png"}))
-                break
-            case "Bergpass":
+            case "Gebirge":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pass.png"}))
                 break
-            case "Sumpf":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
-                break
-            case "Moor":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
-                break
-            case "See":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_pond.png"}))
-                break
-            case "Ruinen":
-            case "Ruine":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ruins.png"}))
-                break
-            case "Hütte":
-            case "Friedhof":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
-                break
-            case "Siedlung":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
-                break
-            case "Anwesen":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shack.png"}))
-                break
             case "Gewässer":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ship.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_dock.png"}))
                 break
-            case "Schrein":
-                marker.addTo(overlays.Schreine)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_shrine.png"}))
-                break
-            case "Verlies":
-            case "Festung":
+            case "Tor":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_stronghold.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_occult.png"}))
                 break
             case "Taverne":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
                 break
-            case "Kloster":
+            case "Höhle":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_cave.png"}))
                 break
-            case "Tempel":
-                marker.addTo(overlays.Tempel)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
-                break
-            case "Kirche":
-                marker.addTo(overlays.Tempel)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_temple.png"}))
-                break
-            case "Grabmal":
+            case "Ruinen":
                 marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
+                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_ruins.png"}))
                 break
-            case "Grab":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
-                break
-            case "Gruft":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tomb.png"}))
-                break
-            case "Turm":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tower.png"}))
-                break
-            case "Windmühle":
-                marker.addTo(overlays.Sonstiges)
-                marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_windmill.png"}))
-                break
-            case "Sägemühle":
+            case "Mühle":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_woodmill.png"}))
                 break

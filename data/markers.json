@@ -1,26 +1,6 @@
 {
   "charts": [
     {
-      "name": "Markath",
-      "places": [
-        {
-          "name": "Llurthargothr",
-          "x": 387,
-          "y": 469,
-          "type": "Stadt",
-          "text": ""
-        },
-        {
-          "name": "Undraridor",
-          "x": 1558,
-          "y": 882,
-          "type": "Dorf",
-          "text": ""
-        }
-      ],
-      "regions": []
-    },
-    {
       "name": "Faergria",
       "places": [
         {
@@ -279,35 +259,35 @@
           "name": "Jagdschloss Dünsberg",
           "x": 1114,
           "y": 1405,
-          "type": "Burg",
+          "type": "Schloss",
           "text": "<h4>habibi</h4><p></p><p>bobo</p>"
         },
         {
           "name": "Drakensumpf",
           "x": 2569,
           "y": 803,
-          "type": "oak",
+          "type": "Wald",
           "text": ""
         },
         {
           "name": "Lichtung des Mondzirkels",
           "x": 2897,
           "y": 797,
-          "type": "oak",
+          "type": "Wald",
           "text": ""
         },
         {
           "name": "Wirrwald",
           "x": 2900,
           "y": 945,
-          "type": "oak",
+          "type": "Wald",
           "text": ""
         },
         {
           "name": "Schwerthain",
           "x": 2195,
           "y": 1100,
-          "type": "oak",
+          "type": "Wald",
           "text": ""
         },
         {
@@ -321,21 +301,21 @@
           "name": "Höhlenheiligtum des Kämpfers",
           "x": 1423,
           "y": 619,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Kronenpass",
           "x": 1030,
           "y": 552,
-          "type": "Berg",
+          "type": "Gebirge",
           "text": ""
         },
         {
           "name": "Schneespitze",
           "x": 1101,
           "y": 472,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -356,35 +336,35 @@
           "name": "Schicksalspass",
           "x": 1083,
           "y": 1135,
-          "type": "Berg",
+          "type": "Gebirge",
           "text": ""
         },
         {
           "name": "Schicksalstempel",
           "x": 1118,
           "y": 1083,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Giftdornsee",
           "x": 1369,
           "y": 2670,
-          "type": "waterfall",
+          "type": "Gewässer",
           "text": ""
         },
         {
           "name": "Inidal-Grenzposten",
           "x": 1606,
           "y": 2880,
-          "type": "statue",
+          "type": "Befestigung",
           "text": ""
         },
         {
           "name": "Tempel der Zeit",
           "x": 1786,
           "y": 2731,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -398,14 +378,14 @@
           "name": "Elpis-Brücke",
           "x": 1463,
           "y": 1814,
-          "type": "bridge",
+          "type": "Brücke",
           "text": ""
         },
         {
           "name": "Kloster Schicksalsweg",
           "x": 1483,
           "y": 2097,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -426,14 +406,14 @@
           "name": "Schloss über den Wolken",
           "x": 3402,
           "y": 3088,
-          "type": "Burg",
+          "type": "Schloss",
           "text": ""
         },
         {
           "name": "Große Mauer von Alt-Aegir",
           "x": 2578,
           "y": 3736,
-          "type": "statue",
+          "type": "Befestigung",
           "text": ""
         },
         {
@@ -447,7 +427,7 @@
           "name": "Endlose Bücherei der Erinnerungen",
           "x": 2313,
           "y": 2697,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -461,21 +441,21 @@
           "name": "Blitzaltar",
           "x": 1400,
           "y": 1251,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Bernsteintempel",
           "x": 1387,
           "y": 1293,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Grollender Bergpass",
           "x": 1454,
           "y": 1251,
-          "type": "Berg",
+          "type": "Gebirge",
           "text": ""
         },
         {
@@ -489,7 +469,7 @@
           "name": "Wurzelschrein",
           "x": 1138,
           "y": 1447,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -503,14 +483,14 @@
           "name": "Vampirschloss",
           "x": 1210,
           "y": 1237,
-          "type": "Burg",
+          "type": "Schloss",
           "text": ""
         },
         {
           "name": "Große Zwergenbrücke",
           "x": 1289,
           "y": 1307,
-          "type": "bridge",
+          "type": "Brücke",
           "text": ""
         },
         {
@@ -524,7 +504,7 @@
           "name": "Meerestempel",
           "x": 1325,
           "y": 1097,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -545,28 +525,28 @@
           "name": "Seeschrein",
           "x": 1241,
           "y": 1150,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Tarporsee",
           "x": 1073,
           "y": 1638,
-          "type": "waterfall",
+          "type": "Gewässer",
           "text": ""
         },
         {
           "name": "Schicksalssee",
           "x": 1312,
           "y": 2093,
-          "type": "waterfall",
+          "type": "Gewässer",
           "text": ""
         },
         {
           "name": "Schrein der Harmonie",
           "x": 1171,
           "y": 1635,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -594,14 +574,14 @@
           "name": "Hindriks Sägemühle",
           "x": 1857,
           "y": 2175,
-          "type": "windmill",
+          "type": "Mühle",
           "text": ""
         },
         {
           "name": "Sümpfe des Vergessens",
           "x": 2708,
           "y": 1790,
-          "type": "oak",
+          "type": "Wald",
           "text": ""
         },
         {
@@ -615,21 +595,21 @@
           "name": "Altar der Funken",
           "x": 2425,
           "y": 1868,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Feuersanktuarium",
           "x": 2398,
           "y": 1844,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Glühender Bergpass",
           "x": 2379,
           "y": 1920,
-          "type": "Berg",
+          "type": "Gebirge",
           "text": ""
         },
         {
@@ -643,14 +623,34 @@
           "name": "Kloster der Heilenden Hand",
           "x": 2229,
           "y": 2359,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
           "name": "Letzte Ruhestätte der Könige",
           "x": 2301,
           "y": 2516,
-          "type": "Tempel",
+          "type": "Heiligtum",
+          "text": ""
+        }
+      ],
+      "regions": []
+    },
+    {
+      "name": "Markath",
+      "places": [
+        {
+          "name": "Llurthargothr",
+          "x": 387,
+          "y": 469,
+          "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Undraridor",
+          "x": 1558,
+          "y": 882,
+          "type": "Dorf",
           "text": ""
         }
       ],
@@ -698,7 +698,7 @@
           "name": "Waldtempel",
           "x": 1753,
           "y": 3115,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -726,7 +726,7 @@
           "name": "L'Abbaye de Montechiaro",
           "x": 1507,
           "y": 3423,
-          "type": "Tempel",
+          "type": "Heiligtum",
           "text": ""
         },
         {
@@ -796,13 +796,13 @@
           "name": "Schmiede im Wald",
           "x": 1634,
           "y": 2947,
-          "type": "house",
+          "type": "Haus",
           "text": ""
         },
         {
           "name": "Llyn",
-          "x": 1525,
-          "y": 2517,
+          "x": 1550,
+          "y": 2484,
           "type": "Dorf",
           "text": ""
         },
