@@ -54,7 +54,17 @@ export function reloadMapElements() {
             case "Stadt":
             case "Dorf":
                 marker.addTo(overlays.Ortschaften)
-                marker.setIcon(new CrestIcon({iconUrl: `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`}))
+                const crestUrl = `${imageHostUrl}/dnd/crests/${markerData.name.toLowerCase()}-crest.png`;
+                (function (markerRef, url) {
+                    const img = new Image()
+                    img.onload = function () {
+                        markerRef.setIcon(new CrestIcon({iconUrl: url}))
+                    }
+                    img.onerror = function () {
+                        markerRef.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_tavern.png"}))
+                    }
+                    img.src = url
+                })(marker, crestUrl)
                 break
             case "Monsterlager":
                 marker.addTo(overlays.Sonstiges)
@@ -250,4 +260,3 @@ export function addPath(pathPoints, start, goal) {
     showLocalsJsonModal(localPaths)
     reloadMapElements()
 }
-
