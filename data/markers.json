@@ -980,6 +980,13 @@
           "y": 1868,
           "type": "Stadt",
           "text": ""
+        },
+        {
+          "name": "Ehrenmal der Krieger",
+          "x": 1713,
+          "y": 2777,
+          "type": "Ruinen",
+          "text": ""
         }
       ],
       "regions": []
