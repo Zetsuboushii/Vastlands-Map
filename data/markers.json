@@ -696,8 +696,8 @@
         },
         {
           "name": "Waldtempel",
-          "x": 1753,
-          "y": 3115,
+          "x": 1775,
+          "y": 3110,
           "type": "Heiligtum",
           "text": ""
         },
@@ -717,8 +717,8 @@
         },
         {
           "name": "Abenteurergilde des Waldes",
-          "x": 1703,
-          "y": 3076,
+          "x": 1685,
+          "y": 3065,
           "type": "Taverne",
           "text": ""
         },
@@ -793,7 +793,7 @@
           "text": ""
         },
         {
-          "name": "Schmiede im Wald",
+          "name": "Stahlhornschmiede",
           "x": 1634,
           "y": 2947,
           "type": "Haus",
@@ -801,8 +801,8 @@
         },
         {
           "name": "Llyn",
-          "x": 1550,
-          "y": 2484,
+          "x": 1516,
+          "y": 2632,
           "type": "Dorf",
           "text": ""
         },
@@ -888,6 +888,97 @@
           "x": 2679,
           "y": 2468,
           "type": "Stadt",
+          "text": ""
+        },
+        {
+          "name": "Lager der Recken des Waldes",
+          "x": 1683,
+          "y": 2967,
+          "type": "Lager",
+          "text": ""
+        },
+        {
+          "name": "Taverne am Silberdunstsee",
+          "x": 1687,
+          "y": 2866,
+          "type": "Taverne",
+          "text": ""
+        },
+        {
+          "name": "Silberdunstsee",
+          "x": 1703,
+          "y": 2939,
+          "type": "Gewässer",
+          "text": ""
+        },
+        {
+          "name": "Thycoria-Wald",
+          "x": 1737,
+          "y": 3136,
+          "type": "Wald",
+          "text": ""
+        },
+        {
+          "name": "Westliche Wälder",
+          "x": 1469,
+          "y": 3030,
+          "type": "Wald",
+          "text": ""
+        },
+        {
+          "name": "Östliche Wälder",
+          "x": 1986,
+          "y": 3029,
+          "type": "Wald",
+          "text": ""
+        },
+        {
+          "name": "Dämmerquell",
+          "x": 1892,
+          "y": 1581,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Abendruhsee",
+          "x": 1531,
+          "y": 3102,
+          "type": "Gewässer",
+          "text": ""
+        },
+        {
+          "name": "Thycoriastrom",
+          "x": 1717,
+          "y": 3087,
+          "type": "Gewässer",
+          "text": ""
+        },
+        {
+          "name": "Grenzgebirge",
+          "x": 1647,
+          "y": 3305,
+          "type": "Gebirge",
+          "text": ""
+        },
+        {
+          "name": "Weitenhafen",
+          "x": 1298,
+          "y": 2771,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Sturmfurt",
+          "x": 876,
+          "y": 1866,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Fluss der Liphias",
+          "x": 1459,
+          "y": 1590,
+          "type": "Gewässer",
           "text": ""
         }
       ],

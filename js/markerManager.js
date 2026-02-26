@@ -67,6 +67,7 @@ export function reloadMapElements() {
                 })(marker, crestUrl)
                 break
             case "Monsterlager":
+            case "Lager":
                 marker.addTo(overlays.Sonstiges)
                 marker.setIcon(new GenericIcon({iconUrl: "assets/markers/marker_camp.png"}))
                 break
