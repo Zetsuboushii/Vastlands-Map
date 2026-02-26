@@ -961,24 +961,24 @@
           "text": ""
         },
         {
-          "name": "Weitenhafen",
-          "x": 1298,
-          "y": 2771,
-          "type": "Dorf",
-          "text": ""
-        },
-        {
-          "name": "Sturmfurt",
-          "x": 876,
-          "y": 1866,
-          "type": "Dorf",
-          "text": ""
-        },
-        {
           "name": "Fluss der Liphias",
           "x": 1459,
           "y": 1590,
           "type": "Gewässer",
+          "text": ""
+        },
+        {
+          "name": "Radulia",
+          "x": 1301,
+          "y": 2773,
+          "type": "Dorf",
+          "text": ""
+        },
+        {
+          "name": "Sleris",
+          "x": 879,
+          "y": 1868,
+          "type": "Stadt",
           "text": ""
         }
       ],
