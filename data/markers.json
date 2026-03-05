@@ -632,6 +632,20 @@
           "y": 2516,
           "type": "Heiligtum",
           "text": ""
+        },
+        {
+          "name": "Tempel von Molida",
+          "x": 585,
+          "y": 2289,
+          "type": "Heiligtum",
+          "text": ""
+        },
+        {
+          "name": "Blütenschloss von Frelia",
+          "x": 1052,
+          "y": 2022,
+          "type": "Schloss",
+          "text": ""
         }
       ],
       "regions": []
@@ -986,6 +1000,13 @@
           "x": 1713,
           "y": 2777,
           "type": "Ruinen",
+          "text": ""
+        },
+        {
+          "name": "Banditenunterschlupf",
+          "x": 1439,
+          "y": 2624,
+          "type": "Höhle",
           "text": ""
         }
       ],
