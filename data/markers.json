@@ -1008,6 +1008,20 @@
           "y": 2624,
           "type": "Höhle",
           "text": ""
+        },
+        {
+          "name": "Weingut Poulcheria",
+          "x": 1567,
+          "y": 2310,
+          "type": "Taverne",
+          "text": ""
+        },
+        {
+          "name": "Stillsee",
+          "x": 1536,
+          "y": 2295,
+          "type": "Gewässer",
+          "text": ""
         }
       ],
       "regions": []
