@@ -1067,9 +1067,16 @@
         },
         {
           "name": "Pyrrhagos",
-          "x": 1951,
-          "y": 1830,
+          "x": 1945,
+          "y": 1824,
           "type": "Gebirge",
+          "text": ""
+        },
+        {
+          "name": "Tempel des Feuers",
+          "x": 1983,
+          "y": 1854,
+          "type": "Heiligtum",
           "text": ""
         }
       ],
